@@ -13,8 +13,11 @@ header{
 nav{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 95vw;
     margin: auto;
+    padding: 2rem 0;
+    background-color: rgba(0, 0, 0, 0.55);
 }
 .logo-div img{
     width: 250%;
@@ -23,4 +26,27 @@ nav{
 nav a{
     text-decoration: none;
     color: #a8afbd;
+    transition-property: background-color;
+    transition-timing-function: ease;
+    transition-duration: 400ms;
+    padding: 1.4rem;
+}
+nav a:hover{
+    background-color: #535559;
+    color: #fff;
+    border-radius: .8rem;
+    
+}
+nav span{
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.header-txt{
+    color: #1ce783;
+    text-align: center;
+}
+.header-txt2 h4{
+    text-align: center;
+    color: #fff;
+    border: 4px solid red;
 }
