@@ -3,3 +3,24 @@
     margin: 0;
     box-sizing: border-box;
 }
+html{
+    font-size: 10px;
+}
+header{
+    background-image: url(./Hulu-imgs/header-background.jpeg);
+    background-size: cover;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 95vw;
+    margin: auto;
+}
+.logo-div img{
+    width: 250%;
+    color: #1ce783;
+}
+nav a{
+    text-decoration: none;
+    color: #a8afbd;
+}
