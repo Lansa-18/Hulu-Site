@@ -44,9 +44,26 @@ nav span{
 .header-txt{
     color: #1ce783;
     text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 2.5rem;
+}
+.header-img{
+    width: 80%;
+    margin: auto;
+}
+.header-img img{
+    width: 80%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .header-txt2 h4{
     text-align: center;
     color: #fff;
-    border: 4px solid red;
+    font-size: 2.8rem;
+    font-weight: 800;
+    line-height: 1.32;
+    margin-top: .8rem;
+
 }
