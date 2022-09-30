@@ -64,6 +64,31 @@ nav span{
     font-size: 2.8rem;
     font-weight: 800;
     line-height: 1.32;
-    margin-top: .8rem;
-
+    margin: 1rem 0;
+}
+.btn-header{
+    background-color: #1ce783;
+    text-align: center;
+    width: 50%;
+    padding: 1.5rem 0;
+    border-radius: .5rem;
+    margin: auto;
+    margin-top: 2rem;
+    transition-duration: 200ms;
+    transition-property: opacity;
+    transition-timing-function: ease;
+}
+.btn-header:hover{
+    opacity: 0.6;
+}
+.btn-header span{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.header-flex{
+    color: #fff;
+    display: flex;
+    border: 1px solid red;
+    justify-content: space-between;
+    align-items: center;
 }
