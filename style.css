@@ -112,6 +112,8 @@ nav span{
 .all-the-tv{
     color: #fff;
     background-color: black;
+    text-align: center;
+    padding: 10rem 0;
 }
 .all-the-tv h4{
     font-size: 1.2rem;
@@ -121,5 +123,5 @@ nav span{
     font-size: 3.2rem;
 }
 .all-the-tv p{
-    font-size: 1.6rem;
+    font-size: 2.1rem;
 }
