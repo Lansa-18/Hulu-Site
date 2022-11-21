@@ -109,3 +109,11 @@ nav span{
 .header-link h4{
     text-align: center;
 }
+.all-the-tv{
+    color: #fff;
+    background-color: black;
+}
+.all-the-tv h4{
+    font-size: 1.5rem;
+    color: #1ce783;
+}
