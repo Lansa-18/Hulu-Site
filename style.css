@@ -143,3 +143,9 @@ nav span{
     background-repeat: no-repeat;
     background-size: cover;
 }
+.hulu-originals{
+    background-image: url(./Hulu-imgs/handmaid.jpeg);
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
