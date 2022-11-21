@@ -41,6 +41,9 @@ nav span{
     font-size: 1.4rem;
     font-weight: 600;
 }
+.header-div{
+    padding: 5rem 0;
+}
 .header-txt{
     color: #1ce783;
     text-align: center;
