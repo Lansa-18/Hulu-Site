@@ -125,10 +125,12 @@ nav span{
 }
 .all-the-tv p{
     font-size: 2.1rem;
+    margin-bottom: 5rem;
 }
 .all-the-tv-imgs{
+    /* padding: 0 2rem; */
     display: grid;
-    gap: 2rem;
+    gap: 1rem;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(1,1fr);
 }
@@ -136,6 +138,7 @@ nav span{
     height: 500px;
     background-repeat: no-repeat;
     background-size: cover;
+    object-fit: cover;
 }
 .tv-shows{
     background-image: url(./Hulu-imgs/bob\ burgers.jpeg);
