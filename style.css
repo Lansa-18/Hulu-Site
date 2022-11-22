@@ -160,3 +160,16 @@ nav span{
     left: 100rem;
     width: 20%;
 }
+.better{
+    color: #fff;
+    background-color: black;
+    text-align: center;
+    padding: 10rem 0;
+}
+.better .gh3{
+    color: #1ce783;
+    font-size: 1.35rem;
+}
+.better h2{
+    font-size: 5rem;
+}
