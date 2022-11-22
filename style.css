@@ -154,6 +154,7 @@ nav span{
 }
 .tiny{
     font-size: 1rem;
+    margin-top: .5rem;
     color: #ffffff99;
     position: relative;
     left: 100rem;
