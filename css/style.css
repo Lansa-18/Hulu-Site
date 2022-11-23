@@ -129,6 +129,8 @@ nav span{
 }
 .all-the-tv-imgs{
     /* padding: 0 2rem; */
+    width: 97vw;
+    margin: auto;
     display: grid;
     gap: 1rem;
     grid-template-columns: repeat(4, 1fr);
@@ -181,5 +183,8 @@ nav span{
 }
 .btn{
     background-color: black;
+    color: #fff;
+}
+i{
     color: #fff;
 }
