@@ -172,7 +172,10 @@ nav span{
 }
 .better h2{
     font-size: 5rem;
+    margin: 3rem 0;
 }
 .better .nh3{
-    font-size: 1.6rem;
+    font-size: 1.9rem;
+    letter-spacing: .6px;
+    margin-bottom: 3rem;
 }
