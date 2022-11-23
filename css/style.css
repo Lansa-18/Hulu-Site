@@ -7,7 +7,7 @@ html{
     font-size: 10px;
 }
 header{
-    background-image: url(./Hulu-imgs/header-background.jpeg);
+    background-image: url(../Hulu-imgs/header-background.jpeg);
     background-size: cover;
 }
 nav{
@@ -141,16 +141,16 @@ nav span{
     object-fit: cover;
 }
 .tv-shows{
-    background-image: url(./Hulu-imgs/bob\ burgers.jpeg);
+    background-image: url(../Hulu-imgs/bob\ burgers.jpeg);
 }
 .movies{
-    background-image: url(./Hulu-imgs/prey.jpeg);
+    background-image: url(../Hulu-imgs/prey.jpeg);
 }
 .hulu-originals{
-    background-image: url(./Hulu-imgs/handmaid.jpeg);
+    background-image: url(../Hulu-imgs/handmaid.jpeg);
 }
 .premiums{
-    background-image: url(./Hulu-imgs/DragonH.jpeg);
+    background-image: url(../Hulu-imgs/DragonH.jpeg);
 }
 .tiny{
     font-size: 1rem;
@@ -178,4 +178,8 @@ nav span{
     font-size: 1.9rem;
     letter-spacing: .6px;
     margin-bottom: 3rem;
+}
+.btn{
+    background-color: black;
+    color: #fff;
 }
