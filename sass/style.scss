@@ -1,9 +1,15 @@
+  @import './variables';
     html,
     body {
         margin: 0;
         padding: 0;
     }
-    // Global Variables
-    $primary-green: #1ce783;
-    $primary-grey: #a8afbd;
-    $width95: 95vw;
+    nav{
+        background-color: $primary;
+        color: white;
+        .logo-div{
+            background-color: $tertiary;
+        }
+    }
+
+    
