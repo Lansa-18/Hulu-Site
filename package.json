@@ -1,0 +1,22 @@
+{
+  "name": "hulu-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GentleMizt/Hulu-Site.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GentleMizt/Hulu-Site/issues"
+  },
+  "homepage": "https://github.com/GentleMizt/Hulu-Site#readme",
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  }
+}
