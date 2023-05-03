@@ -1,4 +1,12 @@
 .btn{
+    &:link,&:visited{
+        color: $grey1;
+        text-decoration: none;
+        padding: 1rem 1.5rem;
+        border: 1px solid blue;
+    }
 
-    
+    &--header{
+
+    }
 }
