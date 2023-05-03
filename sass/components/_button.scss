@@ -1,9 +1,17 @@
 .btn{
+    transition: all .3s;
     &:link,&:visited{
         color: $grey1;
         text-decoration: none;
-        padding: 1rem 1.5rem;
-        border: 1px solid blue;
+        padding: 1rem 2rem;
+        font-weight: 500;
+        font-size: 1.5rem;
+        border-radius: 10px;
+    }
+
+    &:hover{
+        background-color: $grey2;
+        color: $color-white;
     }
 
     &--header{

@@ -3,10 +3,12 @@
 @import 'abstracts/mixins';
 
 @import 'base/base';
+@import 'base/typography';
+
 @import 'components/button';
 
 @import 'layouts/header';
 
-h4{
+h1{
     color: $color-pry;
 }
