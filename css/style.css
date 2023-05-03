@@ -12,9 +12,19 @@ body {
   box-sizing: border-box; }
 
 .header {
-  background-image: url(/img/header-bg.jpeg);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), transparent), url(/img/header-bg.jpeg);
   background-size: cover;
   height: 100vh; }
+  .header__nav {
+    width: 90%;
+    border: 1px solid red;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5rem 0; }
+  .header__logo {
+    width: 250%; }
 
 h4 {
   color: #1ce783; }
