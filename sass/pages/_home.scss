@@ -1,0 +1,15 @@
+.section__shows{
+    padding: 5rem 0;
+    background-color: $bluish-black;
+}
+
+.shows__text{
+    text-align: center;
+    &--p{
+        color: $color-white;
+        font-size: 1.8rem;  
+        font-weight: 400;
+        line-height: 1.32;
+        letter-spacing: 0;
+    }
+}
