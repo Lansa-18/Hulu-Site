@@ -34,7 +34,7 @@ body {
   background-size: cover;
   height: 100vh; }
   .header__nav {
-    width: 90%;
+    width: 92%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -44,4 +44,4 @@ body {
     width: 250%; }
 
 h1 {
-  color: #1ce783; }
+  color: red; }
