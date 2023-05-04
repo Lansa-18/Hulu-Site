@@ -19,7 +19,7 @@
 
     &__content{
         text-align: center;
-        margin-top: 3rem;
+        margin-top: 2rem;
 
         &--h2{
             color: $color-white;
@@ -29,6 +29,22 @@
 
         &--img{
             width: 40%;
+        }
+
+        &-btn-div{
+
+            &--child{
+                color: $color-white;
+                display: block;
+                text-decoration: underline;
+                font-size: 1.4rem;
+                font-weight: 500;
+                letter-spacing: 1px;
+
+                &:not(:last-child){
+                    margin-bottom: 1rem;
+                }
+            }
         }
     }
 }
