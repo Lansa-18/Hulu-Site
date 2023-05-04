@@ -1,5 +1,14 @@
 body {
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    line-height: 1.7;
-  }
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.heading-pry{
+    font-size: 1.2rem;
+    color: $color-pry;
+    font-weight: 600;
+    line-height: 1;
+    text-transform: uppercase;
+}
+

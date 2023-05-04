@@ -1,6 +1,7 @@
 .header{
     background-image: linear-gradient(to bottom, rgba(0,0,0,0.7), transparent), url(/img/header-bg.jpeg);
-    background-size: cover;
+    background-size: 150%;
+    background-position: center;
     height: 100vh;
 
     &__nav{
@@ -11,11 +12,18 @@
         align-items: center;
         padding: 2.5rem 0;
     }
-
-    &__logo-box{
-    }
     
     &__logo{    
-        width: 250%;
+        width: 270%;
+    }
+
+    &__content{
+        text-align: center;
+
+        &--h2{
+            color: $color-white;
+            font-size: 2.4rem;
+            line-height: 1.24;
+        }
     }
 }

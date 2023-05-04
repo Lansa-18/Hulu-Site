@@ -4,6 +4,7 @@
 
 @import 'base/base';
 @import 'base/typography';
+@import 'base/utilities';
 
 @import 'components/button';
 
@@ -12,6 +13,3 @@
 
 @import 'vendors/icon-fonts';
 
-h1{
-    color: $color-pry;
-}
