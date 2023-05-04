@@ -1,20 +1,39 @@
-.btn{
-    transition: all .3s;
-    &:link,&:visited{
-        color: $grey1;
-        text-decoration: none;
-        padding: 1rem 2rem;
-        font-weight: 500;
-        font-size: 1.5rem;
-        border-radius: 10px;
-    }
+.btn {
+  transition: all 0.3s;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
 
-    &:hover{
-        background-color: $grey2;
-        color: $color-white;
-    }
+  &:link,
+  &:visited {
+  }
 
-    &--header{
+  &--header {
+    color: $grey1;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+    border-radius: 10px;
 
+    &:hover {
+      background-color: $grey2;
+      color: $color-white;
     }
+  }
+
+  &--Hgreen {
+    display: inline-block;
+    width: 50%;
+    background-color: $color-pry;
+    color: $color-black;
+    font-weight: 750;
+    font-size: 1.4rem;
+    padding: 1.5rem 0;
+    border-radius: 3.5px;
+
+    &:hover {
+      opacity: .5;
+    }
+  }
 }
