@@ -10,8 +10,8 @@
   transform: translate(-50%, -50%);
 }
 
-@mixin displayFlex{
+@mixin displayflex{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }

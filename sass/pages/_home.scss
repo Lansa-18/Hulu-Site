@@ -91,17 +91,29 @@
   }
 }
 
-.section__sport, .section__news, .section__events{
+.section__sport{
     padding: 10rem 0;
     position: relative;
 
+    .sport__content{
+        width: 75%;
+        margin: auto;
+    }
+
     .headlines__flex{
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 40%;
+        font-weight: bold;
+        font-size: 1.2rem;
+        line-height: 1.125;
+        width: 50%;
         color: #ffffff66;
         text-transform: uppercase;
+    }
+
+    .headlines__text{
+        &:not(:last-child){
+            margin-right: 5rem;
+        }
     }
 }
 
