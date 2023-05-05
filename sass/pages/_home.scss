@@ -9,7 +9,7 @@
     color: $color-white;
     font-size: 1.8rem;
     font-weight: 400;
-    line-height: 1.32;
+    line-height: $lh132;
     letter-spacing: 0;
   }
 }
@@ -57,7 +57,7 @@
 
     &--p1 {
       font-size: 1.8rem;
-      line-height: 1.32;
+      line-height: $lh132;
       opacity: .95;
     }
 
@@ -94,10 +94,22 @@
 .section__sport{
     padding: 10rem 0;
     position: relative;
+    background-image: url(/img/green-bg.jpeg);
+    background-size: 120%;
+    height: 100vh;
 
     .sport__content{
         width: 75%;
         margin: auto;
+
+        &--texts{
+            width: 45%;
+        }
+
+        &--p{
+            color: $color-white;
+            font-weight: 400;
+        }
     }
 
     .headlines__flex{
@@ -117,10 +129,5 @@
     }
 }
 
-.section__sport{
-    background-image: url(/img/green-bg.jpeg);
-    background-size: 120%;
-    height: 100vh;
-}
 
 
