@@ -42,4 +42,18 @@
 
 .section__better {
   background-color: $bluish-black;
+
+  .better__content{
+    text-align: center;
+    &--p{
+      color: $color-white;
+      font-size: 1.8rem;
+      font-weight: 400;
+      line-height: 1.32;
+      letter-spacing: 0;  
+      width: 65%;
+      margin: 0 auto;
+      border: 1px solid red;
+    }
+  }
 }
