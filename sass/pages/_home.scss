@@ -103,12 +103,28 @@
         margin: auto;
 
         &--texts{
-            width: 45%;
+            width: 50%;
         }
 
         &--p{
             color: $color-white;
             font-weight: 400;
+            letter-spacing: 0;
+        }
+
+        &--p1{
+            font-size: 1.8rem;
+            line-height: $lh132;
+        }
+
+        &--p2{
+            font-size: 1rem;
+            line-height: $lh146;
+            color: $light-grey2;
+        }
+
+        &--link{
+            color: inherit;
         }
     }
 
@@ -118,7 +134,7 @@
         font-size: 1.2rem;
         line-height: 1.125;
         width: 50%;
-        color: #ffffff66;
+        color: $light-grey1;
         text-transform: uppercase;
     }
 
