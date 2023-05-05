@@ -123,6 +123,23 @@
             color: $light-grey2;
         }
 
+        &--logo-flex{
+            display: flex;
+        }
+
+        &--logo-box{
+            background-color: $color-white;
+            height: 5rem;
+            width: 5rem;
+            border-radius: 50%;
+            position: relative;
+        }
+        
+        &--logo-img{
+            width: 95%;
+            @include center-vertical-horizontal;
+        }
+
         &--link{
             color: inherit;
         }
