@@ -79,12 +79,13 @@
     }
 
     &--dropdown{
+        display: block;
         padding: 3rem 0;
         transition: all .4s;
-        animation: bounce 1s ease-in-out infinite;
+        // animation: bounce 1s ease-in-out infinite;
         
         &-img{
-            animation: bounce 1s ease-in-out;
+            animation: bounce 1.3s ease-in infinite;
         }
     }
   }
@@ -92,15 +93,22 @@
 
 .section__sport, .section__news, .section__events{
     padding: 10rem 0;
+    position: relative;
 
-    &__headlines__flex{
+    .headlines__flex{
         display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 40%;
+        color: #ffffff66;
+        text-transform: uppercase;
     }
 }
 
 .section__sport{
     background-image: url(/img/green-bg.jpeg);
-    height: 100%;
+    background-size: 120%;
+    height: 100vh;
 }
 
 

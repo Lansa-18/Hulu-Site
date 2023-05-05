@@ -1,4 +1,17 @@
-@mixin margin-auto1{
-    width: 93%;
-    margin: 0 auto;
+@mixin margin-auto1 {
+  width: 93%;
+  margin: 0 auto;
+}
+
+@mixin center-vertical-horizontal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin displayFlex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
