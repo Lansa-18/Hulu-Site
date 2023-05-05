@@ -94,13 +94,14 @@
 .section__sport{
     padding: 10rem 0;
     position: relative;
-    background-image: url(/img/green-bg.jpeg);
-    background-size: 120%;
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.8) -57.5%, rgba(0, 0, 0, 0) 98.72%), url(/img/green-bg.jpeg);
+    background-size: 121%;
     height: 100vh;
 
     .sport__content{
         width: 75%;
         margin: auto;
+        margin-top: 10rem;
 
         &--texts{
             width: 50%;
@@ -133,6 +134,10 @@
             width: 5rem;
             border-radius: 50%;
             position: relative;
+
+            &:not(:last-child){
+                margin-right: 3rem;
+            }
         }
         
         &--logo-img{
@@ -153,6 +158,12 @@
         width: 50%;
         color: $light-grey1;
         text-transform: uppercase;
+    }
+
+    .headline__active{
+        color: $color-white;
+        border-bottom: 5px solid $color-white;
+        padding-bottom: 1.4rem;
     }
 
     .headlines__text{
