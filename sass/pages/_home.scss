@@ -89,3 +89,18 @@
     }
   }
 }
+
+.section__sport, .section__news, .section__events{
+    padding: 10rem 0;
+
+    &__headlines__flex{
+        display: flex;
+    }
+}
+
+.section__sport{
+    background-image: url(/img/green-bg.jpeg);
+    height: 100%;
+}
+
+
