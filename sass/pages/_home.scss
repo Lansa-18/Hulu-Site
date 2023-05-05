@@ -46,14 +46,18 @@
   .better__content{
     text-align: center;
     &--p{
-      color: $color-white;
-      font-size: 1.8rem;
-      font-weight: 400;
-      line-height: 1.32;
-      letter-spacing: 0;  
-      width: 65%;
-      margin: 0 auto;
-      border: 1px solid red;
+        color: $color-white;
+        width: 65%;
+        margin: 0 auto;
+
+        &--p1{
+            font-size: 1.9rem;
+            font-weight: 400;
+            line-height: 1.32;
+            letter-spacing: 0;  
+            border: 1px solid red;
+        }
+
     }
   }
 }
