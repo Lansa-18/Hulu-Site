@@ -76,5 +76,15 @@
         color: $color-white;
         opacity: .8;
     }
+
+    &--dropdown{
+        padding: 3rem 0;
+        transition: all .4s;
+        animation: bounce 1s ease-in-out infinite;
+        
+        &-img{
+            animation: bounce 1s ease-in-out;
+        }
+    }
   }
 }
