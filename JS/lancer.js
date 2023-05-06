@@ -60,5 +60,8 @@ listSections.forEach((list) => {
       default:
         return;
     }
+    list.addEventListener('animationend', ()=>{
+        sportContentText.classList.remove("animate");
+    })
   });
 });
