@@ -169,10 +169,6 @@
 
   .headline__active {
     color: $color-white;
-    border-bottom: 5px solid $color-white;
-    padding-bottom: 1.4rem;
-    // animation: moveRight 1s ease-out;
-
   }
 
   .headlines__text {
@@ -183,6 +179,14 @@
 
     &:hover{
        opacity: .7;
+    }
+
+    &--livescore{
+
+        &-bottom-slider{
+            border-bottom: 5px solid $color-white;
+            padding-bottom: 1.4rem;
+        }
     }
   }
 }
