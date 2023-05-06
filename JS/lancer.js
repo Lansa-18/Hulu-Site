@@ -10,6 +10,7 @@ const events = document.getElementById("events");
 const switch_H2 = document.getElementById("switch-h2");
 const switchP = document.getElementById("switch-p");
 const sportContentText = document.querySelector('.sport__content--texts');
+const bottomSlider = document.querySelector('.headlines__flex--bottom-slider')
 
 const img1 = document.getElementById("img1");
 const img2 = document.getElementById("img2");
