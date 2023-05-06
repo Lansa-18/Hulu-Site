@@ -36,5 +36,4 @@ listSections.forEach((list) => {
   });
 });
 
-// const switchSection = () =>{
-// }
+
