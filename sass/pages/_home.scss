@@ -185,6 +185,16 @@
         transform: translateX(0);
         width: 8.5rem;
     }
+
+    #news.active ~.headlines__flex--bottom-slider{
+        transform: translateX(11.8rem);
+        width: 10.5rem;
+    }
+
+    #events.active ~.headlines__flex--bottom-slider{
+        transform: translateX(260rem);
+        width: 10.7rem;
+    }
   }
 
   .headline__active {
