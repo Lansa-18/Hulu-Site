@@ -107,11 +107,10 @@
     width: 75%;
     margin: auto;
     margin-top: 10rem;
-    transition: all .3s;
+    transition: all .35s;
 
     &--texts {
       width: 50%;
-      animation: moveFromTop .3s ease-in;
     }
 
     &--p {
