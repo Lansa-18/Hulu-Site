@@ -19,7 +19,7 @@ const img4 = document.getElementById("img4");
 
 // looping through each of the section headings
 
-let prevButton = [0]; // counter for the bottomSlider that would be moving to keep track of where it would move once any listSection has been clicked
+let prevButton = listSections[0]; // counter for the bottomSlider that would be moving to keep track of where it would move once any listSection has been clicked
 
 listSections.forEach((list) => {
   list.addEventListener("click", (e) => {
@@ -28,6 +28,10 @@ listSections.forEach((list) => {
     });
     e.target.classList.add("headline__active");
     sportContentText.classList.add("animate");
+
+    prevButton.classList.remove('active');
+    list.classList.add('active');
+    prevButton = list;
 
     // Using the switch statement to change the background image and texts to match the section of the list that is clicked.
     switch (e.target) {
