@@ -10,7 +10,8 @@ const sport = document.getElementById("sports");
 const news = document.getElementById("news");
 const events = document.getElementById("events");
 
-const switch_H1 = document.getElementById('switch-h1');
+const switch_H2 = document.getElementById('switch-h2');
+console.log();
 const switchP = document.getElementById('switch-p');
 
 // function for switching through the sections
@@ -26,18 +27,18 @@ listSections.forEach((list) => {
     switch (e.target) {
       case news:
         sectionSports.style.backgroundImage = "url(/img/blue-bg.jpeg)";
-        switch_H1.textContent = 'Breaking News';
+        switch_H2.textContent = 'Breaking News';
         switchP.textContent = "Keep pace with what's going on locally and globally with trusted opinions from all the top news networks.";
         break;
       case events:
         sectionSports.style.backgroundImage = "url(/img/pink-bg.jpeg)";
-        switch_H1.textContent = 'Biggest Events';
+        switch_H2.textContent = 'Biggest Events';
         switchP.textContent = "Spectacular, can't-miss moments like the Olympics, Grammys®, Oscars®, Emmys®, and more.";
         break;
       case sport:
         sectionSports.style.backgroundImage = "url(/img/green-bg.jpeg)";
-        switch_H1.textContent = 'Live Sports';
-        switchP.textContent = "Spectacular, can't-miss moments like the Olympics, Grammys®, Oscars®, Emmys®, and more.";
+        switch_H2.textContent = 'Live Sports';
+        switchP.textContent = "Catch your games at home or on the go. Stream live games from major college and pro leagues including the NCAA®, NBA, NHL, NFL, and more.";
         break;
       default:
         return;
