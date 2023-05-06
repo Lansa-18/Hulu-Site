@@ -177,8 +177,13 @@
       transition: all .3s ease-in-out;
     }
 
-    &--active{
+    .active{
         color: $color-white;
+    }
+
+    #sports.active ~.headlines__flex--bottom-slider{
+        transform: translateX(0);
+        width: 8.5rem;
     }
   }
 
