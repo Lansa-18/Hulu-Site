@@ -18,14 +18,22 @@ listSections.forEach((list) => {
       list.classList.remove("headline__active");
     });
     e.target.classList.add("headline__active");
-    if (e.target == news) {
-      sectionSports.style.backgroundImage = "url(/img/blue-bg.jpeg)";
-    } else if (e.target == events){
-        sectionSports.style.backgroundImage = "url(/img/pink-bg.jpeg)";       
-    }  else if (e.target == sport){
-        sectionSports.style.backgroundImage = "url(/img/green-bg.jpeg)";       
-    } 
-});
+
+    // Using the switch statement to change the background image of the list that is clicked.
+    switch (e.target) {
+      case news:
+        sectionSports.style.backgroundImage = "url(/img/blue-bg.jpeg)";
+        break;
+      case events:
+        sectionSports.style.backgroundImage = "url(/img/pink-bg.jpeg)";
+        break;
+      case sport:
+        sectionSports.style.backgroundImage = "url(/img/green-bg.jpeg)";
+        break;
+      default:
+        return;
+    }
+  });
 });
 
 // const switchSection = () =>{
