@@ -4,18 +4,15 @@ const sectionSports = document.querySelector(".section__sport");
 // const sectionEvents = document.querySelector(".section__events");
 
 const listSections = document.querySelectorAll(".headlines__text");
-// console.log(listSections);
 
 const sport = document.getElementById("sports");
 const news = document.getElementById("news");
 const events = document.getElementById("events");
 
 const switch_H2 = document.getElementById('switch-h2');
-console.log();
 const switchP = document.getElementById('switch-p');
 
-// function for switching through the sections
-
+// looping through each of the section headings
 listSections.forEach((list) => {
   list.addEventListener("click", (e) => {
     listSections.forEach((list) => {
@@ -23,7 +20,7 @@ listSections.forEach((list) => {
     });
     e.target.classList.add("headline__active");
 
-    // Using the switch statement to change the background image of the list that is clicked.
+    // Using the switch statement to change the background image and texts to match the section of the list that is clicked.
     switch (e.target) {
       case news:
         sectionSports.style.backgroundImage = "url(/img/blue-bg.jpeg)";
