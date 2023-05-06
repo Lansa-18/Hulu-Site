@@ -30,17 +30,27 @@ listSections.forEach((list) => {
         switch_H2.textContent = 'Breaking News';
         switchP.textContent = "Keep pace with what's going on locally and globally with trusted opinions from all the top news networks.";
         img1.src = "./img/newslive.png";
+        img2.src = "./img/cnn.svg";
+        img3.src = "./img/msnbc.png";
+        img4.src = "./img/foxnews.svg";
         break;
       case events:
         sectionSports.style.backgroundImage = "url(/img/pink-bg.jpeg)";
         switch_H2.textContent = 'Biggest Events';
         switchP.textContent = "Spectacular, can't-miss moments like the Olympics, Grammys®, Oscars®, Emmys®, and more.";
+        img1.src = "./img/cream-yellow.png";
+        img2.src = "./img/goldenglobe.png";
+        img3.src = "./img/grammy.png";
+        img4.src = "./img/oscars.png";
         break;
       case sport:
         sectionSports.style.backgroundImage = "url(/img/green-bg.jpeg)";
         switch_H2.textContent = 'Live Sports';
         switchP.textContent = "Catch your games at home or on the go. Stream live games from major college and pro leagues including the NCAA®, NBA, NHL, NFL, and more.";
         img1.src = "./img/cbs-sports.png";
+        img2.src = "./img/espn.png";
+        img3.src = "./img/fs1.svg";
+        img4.src = "./img/nfl.png";
         break;
       default:
         return;
