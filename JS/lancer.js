@@ -22,6 +22,7 @@ listSections.forEach((list) => {
       list.classList.remove("headline__active");
     });
     e.target.classList.add("headline__active");
+    e.target.classList.add("animate");
 
     // Using the switch statement to change the background image and texts to match the section of the list that is clicked.
     switch (e.target) {
