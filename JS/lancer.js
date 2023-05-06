@@ -60,7 +60,7 @@ listSections.forEach((list) => {
       default:
         return;
     }
-    list.addEventListener('animationend', ()=>{
+    sportContentText.addEventListener('animationend', ()=>{
         sportContentText.classList.remove("animate");
     })
   });
