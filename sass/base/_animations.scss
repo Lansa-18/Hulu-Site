@@ -12,16 +12,18 @@
     }
 }
 
-// @keyframes moveRight{
-//     0%{
-//         transform: translateX(0);
-//     }
+@keyframes moveFromTop{
+    0%{
+        opacity: 0;
+        transform: translateY(.5rem);
+    }
 
-//     // 50%{
+    // 50%{
 
-//     // }
+    // }
 
-//     100%{
-//         transform: translateX(11.8rem);
-//     }
-// }
+    100%{
+        opacity: 1;
+        transform: translateY(-.5rem);
+    }
+}
