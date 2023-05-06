@@ -18,6 +18,9 @@ const img3 = document.getElementById("img3");
 const img4 = document.getElementById("img4");
 
 // looping through each of the section headings
+
+let prevButton = [0]; // counter for the bottomSlider that would be moving to keep track of where it would move once any listSection has been clicked
+
 listSections.forEach((list) => {
   list.addEventListener("click", (e) => {
     listSections.forEach((list) => {
@@ -66,3 +69,5 @@ listSections.forEach((list) => {
     })
   });
 });
+
+
