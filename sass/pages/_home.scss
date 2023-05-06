@@ -164,18 +164,21 @@
     width: 50%;
     color: $light-grey2;
     text-transform: uppercase;
-    // transition: all 1s;
     position: relative;
 
     &--bottom-slider {
-        position: absolute;
-        top: 2.5rem;
-        bottom: 0;
-        left: 0;
-      //   border-bottom: 5px solid $color-white;
+      position: absolute;
+      top: 2.5rem;
+      bottom: 0;
+      left: 0;
       background-color: $color-white;
-      height: .7rem;
+      height: 0.7rem;
       width: 8.5rem;
+      transition: all .3s ease-in-out;
+    }
+
+    &--active{
+        
     }
   }
 
