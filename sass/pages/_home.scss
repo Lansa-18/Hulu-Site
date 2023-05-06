@@ -163,6 +163,7 @@
     width: 50%;
     color: $light-grey2;
     text-transform: uppercase;
+    // transition: all 1s;
 
   }
 
@@ -170,6 +171,8 @@
     color: $color-white;
     border-bottom: 5px solid $color-white;
     padding-bottom: 1.4rem;
+    // animation: moveRight 1s ease-out;
+
   }
 
   .headlines__text {
@@ -179,7 +182,7 @@
     }
 
     &:hover{
-        color: $light-grey1;
+       opacity: .7;
     }
   }
 }

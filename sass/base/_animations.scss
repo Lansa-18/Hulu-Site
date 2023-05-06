@@ -7,11 +7,21 @@
         transform: translateY(.8rem);
     }
 
-    // 86%{
-    //     transform: translateY(-.3rem);
-    // }
-
     100%{
         transform: translateY(-.1rem);
     }
 }
+
+// @keyframes moveRight{
+//     0%{
+//         transform: translateX(0);
+//     }
+
+//     // 50%{
+
+//     // }
+
+//     100%{
+//         transform: translateX(3rem);
+//     }
+// }
