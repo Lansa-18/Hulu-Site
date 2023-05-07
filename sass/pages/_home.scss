@@ -212,20 +212,23 @@
   background-color: $bluish-black;
   padding: 5rem 0;
 
-  .plan__top{
-    &--text{
+  .plan__overall {
+    @include margin-auto2;
+    border: 1px solid red;
+    .plan__top {
+      &--text {
         text-align: center;
-    }
+      }
 
-
-    &--p{
+      &--p {
         line-height: $lh132;
         font-size: 1.8rem;
         @include para-pry;
 
-        strong{
-            display: block;
+        strong {
+          display: block;
         }
+      }
     }
   }
 }
