@@ -368,8 +368,22 @@
       }
     }
 
-    &-bottom{
+    &-bottom {
+      color: $color-white;
 
+
+      &--container{
+        @include displayflex;
+
+        &--left{
+            flex-basis: 40%;
+        }
+
+        &--right{
+           @include displayflex;
+            flex-basis: 60%;
+        }
+      }
     }
   }
 }
