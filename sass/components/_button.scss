@@ -1,5 +1,5 @@
 .btn {
-  transition: all 0.3s;
+  transition: all 0.5s;
   text-decoration: none;
   text-transform: uppercase;
   cursor: pointer;
@@ -79,5 +79,10 @@
     font-weight: 700;
     line-height: 1;
     letter-spacing: 0.6px;
+
+    &:hover{
+        opacity: .8;
+    }
   }
+
 }
