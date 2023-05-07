@@ -371,17 +371,28 @@
     &-bottom {
       color: $color-white;
 
-
-      &--container{
+      &--container {
         @include displayflex;
 
-        &--left{
-            flex-basis: 40%;
+        &--left {
+          flex-basis: 40%;
+
+          h4 {
+            @include bottom-h4-plan;
+          }
         }
 
-        &--right{
-           @include displayflex;
-            flex-basis: 60%;
+        &--right {
+          @include displayflex;
+          flex-basis: 60%;
+
+          &--h4-1 {
+            @include displayflex;
+          }
+
+          &--h4-2 {
+            @include displayflex;
+          }
         }
       }
     }
