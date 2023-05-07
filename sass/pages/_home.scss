@@ -238,8 +238,8 @@
       border-bottom: 1px solid $border-grey-color;
       position: sticky;
       top: 0;
-      height: 21rem;
-   
+      background-color: $color-black;
+        
 
       &--container {
         display: flex;
@@ -373,7 +373,7 @@
 
     &-bottom {
       color: $color-white;
-      z-index: -100;
+    //   z-index: 100;
 
       &--container {
         @include displayflex;
