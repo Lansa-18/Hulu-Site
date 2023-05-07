@@ -48,11 +48,9 @@
     text-align: center;
 
     &--p {
-      color: $color-white;
       width: 60%;
       margin: 0 auto;
-      font-weight: 400;
-      letter-spacing: 0;
+      @include para-pry;
     }
 
     &--p1 {
@@ -114,9 +112,7 @@
     }
 
     &--p {
-      color: $color-white;
-      font-weight: 400;
-      letter-spacing: 0;
+      @include para-pry;
     }
 
     &--p1 {
@@ -174,26 +170,26 @@
       background-color: $color-white;
       height: 0.7rem;
       width: 8.5rem;
-      transition: all .3s ease-in-out;
+      transition: all 0.3s ease-in-out;
     }
 
-    .active{
-        color: $color-white;
+    .active {
+      color: $color-white;
     }
 
-    #sports.active ~.headlines__flex--bottom-slider{
-        transform: translateX(0);
-        width: 8.5rem;
+    #sports.active ~ .headlines__flex--bottom-slider {
+      transform: translateX(0);
+      width: 8.5rem;
     }
 
-    #news.active ~.headlines__flex--bottom-slider{
-        transform: translateX(13.8rem);
-        width: 11rem;
+    #news.active ~ .headlines__flex--bottom-slider {
+      transform: translateX(13.8rem);
+      width: 11rem;
     }
 
-    #events.active ~.headlines__flex--bottom-slider{
-        transform: translateX(30.5rem);
-        width: 11rem;
+    #events.active ~ .headlines__flex--bottom-slider {
+      transform: translateX(30.5rem);
+      width: 11rem;
     }
   }
 
@@ -211,4 +207,8 @@
       opacity: 0.7;
     }
   }
+}
+
+.section__plan {
+  background-color: $bluish-black;
 }
