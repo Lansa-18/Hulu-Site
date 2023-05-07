@@ -211,4 +211,21 @@
 
 .section__plan {
   background-color: $bluish-black;
+
+  .plan__top{
+    &--text{
+        text-align: center;
+    }
+
+
+    &--p{
+        line-height: $lh132;
+        font-size: 1.8rem;
+        @include para-pry;
+
+        strong{
+            display: block;
+        }
+    }
+  }
 }
