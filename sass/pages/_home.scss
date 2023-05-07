@@ -241,18 +241,18 @@
       }
 
       &--flex-right {
-        flex-basis: 20%;
+        flex-basis: 40%;
         color: $color-white;
-        // border: 1px solid blue;
         text-transform: uppercase;
         display: flex;
+        justify-content: space-between;
         
         &--1 {
-          h3 {
-            font-size: 1.4rem;
-            font-weight: 500;
-            line-height: 1.4;
-            letter-spacing: 0;
+            display: flex;
+            flex-direction: column;
+
+          span {
+            @include span1;
           }
           img {
             width: 39%;
@@ -314,6 +314,15 @@
             // .toggle-switch__checkbox:checked ~ .toggle-switch__label{
             //     background-color: $color-pry;
             // }
+        }
+
+        &--3{
+            span{
+                @extend span;
+            }
+            img{
+                width: 39%;
+            }
         }
       }
     }
