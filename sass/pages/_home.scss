@@ -209,12 +209,13 @@
 }
 
 .section__plan {
-  background-color: $bluish-black;
+  background-color: #000;
   padding: 5rem 0;
 
   .plan__overall {
     @include margin-auto2;
     border: 1px solid red;
+
 
     &-top {
       &--text {
@@ -235,6 +236,9 @@
     &-middle {
       padding: 2rem 3rem;
       border-top: 1px solid $border-grey-color;
+      border-bottom: 1px solid $border-grey-color;
+      position: sticky;
+      top: 0;
 
       &--container {
         display: flex;
@@ -245,40 +249,40 @@
         color: $color-white;
         text-transform: uppercase;
         display: flex;
-        justify-content: space-between;
+        border: 1px solid white;
 
         &--1 {
-            // display: flex;
-            // flex-direction: column;
+            flex-basis: 27%;
+            width: 100%;
           h3 {
             @include h3-plan;
           }
 
           img {
-            width: 39%;
+            width: 80%;
           }
         }
 
         &--2 {
-            border: 1px solid red;
+            flex-basis: 22%;
           .toggle {
             background-color: $label-bg;
             @include displayflex;
             cursor: pointer;
             border-radius: 5rem;
-            width: 5.7rem;
+            width: 6.5rem;
             position: relative;
             height: 3rem;
 
             &--button {
               cursor: pointer;
-              width: 3.2rem;
-              height: 3.2rem;
+              width: 3.5rem;
+              height: 3.5rem;
               background-color: $color-white;
               border-radius: 50%;
               position: absolute;
-              top: -1px;
-              left: -1px;
+              top: -2px;
+              left: -2px;
               transition: 0.2s;
             }
           }
@@ -317,13 +321,12 @@
         }
 
         &--3 {
-            // display: flex;
-            // flex-direction: column;
+            flex-basis: 35%;
           h3 {
             @include h3-plan;
           }
           img {
-            width: 40%;
+            width: 110%;
           }
         }
       }
