@@ -333,9 +333,11 @@
         text-align: center;
         flex-basis: 55%;
         display: flex;
-
+        border: 1px solid green;
         &--1{
             border: 1px solid red;
+            flex-basis: 49%;
+            padding: 2rem 0;
         }
 
         &--h3 {

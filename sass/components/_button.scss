@@ -3,6 +3,7 @@
   text-decoration: none;
   text-transform: uppercase;
   cursor: pointer;
+  display: inline-block;
 
   &:link,
   &:visited {
@@ -68,6 +69,7 @@
   }
 
   &--white{
+    width: 100%;
     background-color: $color-white;
     color: $color-black;
     padding: 1.5rem 6rem;
