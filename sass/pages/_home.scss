@@ -235,6 +235,27 @@
     &-middle{
         padding: 2rem 0;
         border-top: 1px solid $border-grey-color;
+
+        &--container{
+            
+        }
+
+        &--flex-right{
+            color: $color-white;
+            text-transform: uppercase;
+            &--1{
+                h3{
+                    font-size: 1.4rem;
+                    font-weight: 500;
+                    line-height: 1.4;
+                    letter-spacing: 0;
+                }
+                img{
+                    width: 9%;
+                }
+
+            }
+        }
     }
     
   }
