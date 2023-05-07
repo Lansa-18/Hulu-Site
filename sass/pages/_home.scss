@@ -211,6 +211,8 @@
 .section__plan {
   background-color: #000;
   padding: 5rem 0;
+  width: 100%;
+  position: relative;
 
   .plan__overall {
     @include margin-auto2;
@@ -237,6 +239,8 @@
       border-bottom: 1px solid $border-grey-color;
       position: sticky;
       top: 0;
+      height: 21rem;
+      z-index: 1000;
 
       &--container {
         display: flex;
