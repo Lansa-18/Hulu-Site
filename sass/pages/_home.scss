@@ -211,10 +211,13 @@
 
 .section__plan {
   background-color: $bluish-black;
+  padding: 3rem 0;
 
   .plan__top{
     &--text{
         text-align: center;
+        padding: 2rem 0;
+        border-bottom: 1px solid ;
     }
 
 
