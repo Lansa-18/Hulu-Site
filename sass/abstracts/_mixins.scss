@@ -3,6 +3,11 @@
   margin: 0 auto;
 }
 
+@mixin margin-auto2{
+  width: 75%;
+  margin: auto;
+}
+
 @mixin center-vertical-horizontal {
   position: absolute;
   top: 50%;
