@@ -382,6 +382,7 @@
 
         &--left {
           flex-basis: 40%;
+          @include displayflex;
 
           h4 {
             @include bottom-h4-plan;
