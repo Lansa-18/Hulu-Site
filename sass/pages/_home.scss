@@ -216,7 +216,7 @@
     @include margin-auto2;
     border: 1px solid red;
 
-    .plan__top {
+    &-top {
       &--text {
         text-align: center;
       }
@@ -232,6 +232,10 @@
       }
     }
 
+    &-middle{
+        padding: 2rem 0;
+        border: 1px solid blue;
+    }
     
   }
 }
