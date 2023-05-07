@@ -243,7 +243,7 @@
         align-items: center;
       }
 
-      &--flex-right {
+      &--flex-left {
         margin-right: 2rem;
         flex-basis: 40%;
         color: $color-white;
@@ -330,7 +330,7 @@
         }
       }
 
-      &--flex-left {
+      &--flex-right {
         text-align: center;
         flex-basis: 60%;
         display: flex;
