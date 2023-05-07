@@ -215,7 +215,6 @@
   .plan__overall {
     @include margin-auto2;
 
-
     &-top {
       &--text {
         text-align: center;
@@ -251,8 +250,8 @@
         border: 1px solid white;
 
         &--1 {
-            flex-basis: 27%;
-            width: 100%;
+          flex-basis: 27%;
+          width: 100%;
           h3 {
             @include h3-plan;
           }
@@ -263,7 +262,7 @@
         }
 
         &--2 {
-            flex-basis: 22%;
+          flex-basis: 22%;
           .toggle {
             background-color: $label-bg;
             @include displayflex;
@@ -320,13 +319,24 @@
         }
 
         &--3 {
-            flex-basis: 35%;
+          flex-basis: 35%;
           h3 {
             @include h3-plan;
           }
           img {
             width: 110%;
           }
+        }
+      }
+
+      &--flex-left {
+        &--h3 {
+          color: $light-grey3;
+          text-transform: uppercase;
+          font-size: $default-font-size;
+          font-weight: 500;
+          line-height: 1;
+          letter-spacing: 0.6px;
         }
       }
     }
