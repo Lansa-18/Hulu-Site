@@ -330,6 +330,14 @@
       }
 
       &--flex-left {
+        text-align: center;
+        flex-basis: 55%;
+        display: flex;
+
+        &--1{
+            border: 1px solid red;
+        }
+
         &--h3 {
             margin-top: 2rem;
           color: $light-grey3;
@@ -338,6 +346,16 @@
           font-weight: 500;
           line-height: 1;
           letter-spacing: 0.6px;
+          margin-bottom: 0.5rem;
+        }
+
+        &--h4{
+            font-size: $_18px;
+            color: $color-white;
+            font-weight: 600;
+            line-height: $lh124;
+            letter-spacing: 0;
+            margin-bottom: 2.5rem;
         }
       }
     }
