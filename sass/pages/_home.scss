@@ -248,6 +248,8 @@
         justify-content: space-between;
 
         &--1 {
+            // display: flex;
+            // flex-direction: column;
           h3 {
             @include h3-plan;
           }
@@ -258,6 +260,7 @@
         }
 
         &--2 {
+            border: 1px solid red;
           .toggle {
             background-color: $label-bg;
             @include displayflex;
@@ -314,11 +317,13 @@
         }
 
         &--3 {
+            // display: flex;
+            // flex-direction: column;
           h3 {
             @include h3-plan;
           }
           img {
-            width: 39%;
+            width: 40%;
           }
         }
       }
