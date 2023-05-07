@@ -215,6 +215,7 @@
   .plan__overall {
     @include margin-auto2;
     border: 1px solid red;
+
     .plan__top {
       &--text {
         text-align: center;
@@ -230,5 +231,7 @@
         }
       }
     }
+
+    
   }
 }
