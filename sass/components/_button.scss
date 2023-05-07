@@ -56,4 +56,15 @@
     }
   }
 
+  &--green{
+    background-color: $color-pry;
+    color: $color-black;
+    border-radius: 5rem;
+    padding: 1rem 1.5rem;
+
+    &:hover{
+        opacity: .85;
+    }
+  }
+
 }
