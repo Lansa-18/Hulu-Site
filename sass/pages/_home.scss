@@ -385,13 +385,16 @@
         &--right {
           @include displayflex;
           flex-basis: 60%;
+          text-align: center;
 
           &--h4-1 {
-            @include displayflex;
+            @include bottom-h4-plan;
+            flex-basis: 49%;
           }
 
           &--h4-2 {
-            @include displayflex;
+            @include bottom-h4-plan;
+            flex-basis: 49%;
           }
         }
       }
