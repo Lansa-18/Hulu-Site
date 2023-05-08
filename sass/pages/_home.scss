@@ -430,6 +430,7 @@
       color: $color-white;
 
       &--texts {
+        border-bottom: 1px solid $border-grey-color;
         h3 {
           font-size: 3.2rem;
           font-weight: 600;
