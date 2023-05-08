@@ -453,6 +453,7 @@
     }
 
     &-addon1 {
+      display: none;
       margin-top: 10rem;
       color: $color-white;
 
@@ -518,10 +519,12 @@
     }
 
     &--hider {
+      margin-top: 5rem;
       color: $color-white;
       @include bottom-h4-plan;
-      padding: 2.5rem;
+      border-top: 1px solid $border-grey-color;
       border-bottom: 1px solid $border-grey-color;
+      padding: 2.5rem;
       cursor: pointer;
 
       &--content {
