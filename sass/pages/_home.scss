@@ -239,7 +239,6 @@
       position: sticky;
       top: 0;
       background-color: $color-black;
-        
 
       &--container {
         display: flex;
@@ -373,7 +372,6 @@
 
     &-bottom {
       color: $color-white;
-    //   z-index: 100;
 
       &--container {
         @include displayflex;
@@ -388,7 +386,7 @@
             @include bottom-h4-plan;
           }
 
-          img{
+          img {
             cursor: pointer;
           }
         }
@@ -402,12 +400,12 @@
             @include bottom-h4-plan;
             flex-basis: 49%;
 
-            &--span{
-                color: $light-grey4;
-                font-size: 3.5rem;
-                line-height: $lh132;
-                font-weight: 400;
-                letter-spacing: 0
+            &--span {
+              color: $light-grey4;
+              font-size: 3.5rem;
+              line-height: $lh132;
+              font-weight: 400;
+              letter-spacing: 0;
             }
           }
 
