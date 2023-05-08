@@ -517,22 +517,6 @@
         }
       }
 
-      &--hider {
-        @include bottom-h4-plan;
-        padding: 2.5rem;
-        border-bottom: 1px solid $border-grey-color;
-        cursor: pointer;
-
-        &--content {
-          @include displayflex;
-          width: 15%;
-          margin: auto;
-
-          img {
-            transform: rotate(180deg);
-          }
-        }
-      }
     }
   }
 }
