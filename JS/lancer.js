@@ -77,4 +77,9 @@ listSections.forEach((list) => {
   });
 });
 
+// EVENT LISTENER HANDLING THE ADD-ON HIDER FUNCTIONALITY
+
+overallHider.addEventListener('click', ()=>{
+    hiderImg.style.transform.rotate('180deg');
+});
 
