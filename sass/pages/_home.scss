@@ -424,5 +424,22 @@
         }
       }
     }
+
+    &-addon1{
+        margin-top: 10rem;
+        color: $color-white;
+
+        &--texts{
+            h3{
+                font-size: 3.2rem;
+                font-weight: 600;
+                line-height: 1.2;
+                letter-spacing: -0.2px;
+                margin-bottom: 1.3rem;
+            }
+
+
+        }
+    }
   }
 }
