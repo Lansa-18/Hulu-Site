@@ -417,6 +417,7 @@
 
       &--text {
         &--span {
+          color: $color-white;
           font-size: 10px;
           @include default-typography;
           line-height: $lh146;
