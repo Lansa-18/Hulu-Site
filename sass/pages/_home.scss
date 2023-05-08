@@ -253,7 +253,7 @@
         display: flex;
 
         &--1 {
-          flex-basis: 27%;
+          flex-basis: 29%;
           width: 100%;
           h3 {
             @include h3-plan;
@@ -265,7 +265,7 @@
         }
 
         &--2 {
-          flex-basis: 22%;
+          flex-basis: 25%;
           .toggle {
             background-color: $label-bg;
             @include displayflex;
@@ -335,8 +335,8 @@
       &--flex-right1 {
         text-align: center;
         flex-basis: 60%;
-        // display: flex;
-        display: none;
+        display: flex;
+        // display: none;
 
         &--1 {
           flex-basis: 49%;
@@ -373,7 +373,8 @@
       // STYLINGS FOR THE ACTIVE PART OF THE FLEX
       &--flex-right2 {
         flex-basis: 15%;
-        display: flex;
+        // display: flex;
+        display: none;
         text-align: center;
         border: 1px solid blue;
 
