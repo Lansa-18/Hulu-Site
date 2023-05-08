@@ -370,21 +370,32 @@
         }
       }
 
-      &--flex-right2{
+      &--flex-right2 {
+        flex-basis: 55%;
         display: flex;
         text-align: center;
         border: 1px solid blue;
 
-        &--1{
-            flex-basis: 33.3%;
-            border: 1px solid red;
-            img{
-                width: 70%;
-            }
+        &--1 {
+          flex-basis: 33.3%;
+          border: 1px solid red;
+          img {
+            width: 75%;
+          }
 
-            &:not(:last-child){
-                margin-right: .5rem;
-            }
+          span {
+            display: block;
+            color: $color-white;
+            font-size: $default-font-size;
+            font-weight: 600;
+            line-height: 1.32;
+            letter-spacing: 0;
+            width: 70%;
+          }
+
+          &:not(:last-child) {
+            margin-right: 0.5rem;
+          }
         }
       }
     }
@@ -508,22 +519,21 @@
         }
       }
 
-      &--hider{
+      &--hider {
         @include bottom-h4-plan;
         padding: 2.5rem;
         border-bottom: 1px solid $border-grey-color;
         cursor: pointer;
 
-        &--content{
-            @include displayflex;
-            width: 15%;
-            margin: auto;
+        &--content {
+          @include displayflex;
+          width: 15%;
+          margin: auto;
 
-            img{
-              transform: rotate(180deg);
-            }
+          img {
+            transform: rotate(180deg);
+          }
         }
-        
       }
     }
   }
