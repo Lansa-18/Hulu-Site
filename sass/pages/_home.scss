@@ -233,7 +233,7 @@
     }
 
     &-middle {
-      padding: 2rem 3rem;
+      padding: 2rem 1rem;
       border-top: 1px solid $border-grey-color;
       border-bottom: 1px solid $border-grey-color;
       position: sticky;
@@ -268,7 +268,7 @@
             @include displayflex;
             cursor: pointer;
             border-radius: 5rem;
-            width: 6.5rem;
+            width: 5.7rem;
             position: relative;
             height: 3rem;
 
@@ -332,7 +332,7 @@
       &--flex-right1 {
         text-align: center;
         flex-basis: 60%;
-        // display: flex;
+        display: flex;
         display: none;
 
         &--1 {
@@ -369,18 +369,16 @@
 
       // STYLINGS FOR THE ACTIVE PART OF THE FLEX
       &--flex-right2 {
-        width: 85%;
-        flex-basis: 50%;
+        // width: 85%;
+        flex-basis: 30%;
         display: flex;
         // display: none;
         text-align: center;
-        border: 1px solid blue;
 
         &--1 {
-          flex-basis: 33.3%;
-          border: 1px solid red;
+          flex-basis: 33%;
           img {
-            width: 75%;
+            width: 70%;
           }
 
           span {
@@ -395,7 +393,7 @@
           }
 
           &:not(:last-child) {
-            margin-right: 0.5rem;
+            margin-right: 1rem;
           }
         }
       }
