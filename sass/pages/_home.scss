@@ -332,10 +332,12 @@
         }
       }
 
-      &--flex-right {
+      &--flex-right1 {
+        // visibility: hidden;
         text-align: center;
         flex-basis: 60%;
-        display: flex;
+        // display: flex;
+        display: none;
 
         &--1 {
           flex-basis: 49%;
