@@ -103,26 +103,22 @@ listSections.forEach((list) => {
 //   hiderImg.style.transform = 'rotate(360deg)';
 // });
 
-const overallHider = document.querySelector('#overall-hider');
-const hiderImg = document.querySelector('#hider-img');
-const hiderDiv = document.querySelector('#hider-div');
-const addOns = document.querySelector('#addon');
+const hiderDiv = document.querySelector("#hider-div");
+const hiderImg = document.querySelector("#hider-img");
+const addonDiv = document.querySelector("#addon");
 
 let isOpen = false;
 
-overallHider.addEventListener('click', () => {
-  // Toggle the state of the open/close button
+hiderDiv.addEventListener("click", () => {
   isOpen = !isOpen;
-
   if (isOpen) {
-    // Image rotation and text change for open state
-    hiderDiv.innerHTML = "Hide Add-ons";
-    hiderImg.src ="./img/Pricing_Checkmark_green-light.svg";
-    addOns.style.display = 'block';
+    addonDiv.style.display = "block";
+    hiderImg.classList.add("rotate-180");
+    hiderDiv.textContent = "Hide Add-ons";
   } else {
-    // Image rotation and text change for closed state
-    hiderDiv.innerHTML = "Show Add-ons";
-    hiderImg.src ="./img/Dropdown_Down_Arrow.svg";
-    addOns.style.display = 'none';
+    addonDiv.style.display = "none";
+    hiderImg.classList.remove("rotate-180");
+    hiderImg.classList.add("rotate-0");
+    hiderDiv.textContent = "Show Add-ons";
   }
 });
