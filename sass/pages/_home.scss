@@ -404,8 +404,8 @@
               color: $light-grey4;
               font-size: 3.5rem;
               line-height: $lh132;
-              font-weight: 400;
-              letter-spacing: 0;
+              @include default-typography;
+
             }
           }
 
@@ -420,8 +420,7 @@
 
         &--span{
             font-size: 10px;
-            font-weight: 400;
-            letter-spacing: 0;
+            @include default-typography;
             line-height: $lh146;
         }
       }
