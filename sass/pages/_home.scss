@@ -500,11 +500,9 @@
             width: 15%;
             margin: auto;
 
-            // img{
-            //     border: 1px solid red;
-            //     width: 2.5%;
-            //     // margin-top: 4rem;
-            // }
+            img{
+              transform: rotate(180deg);
+            }
         }
         
       }
