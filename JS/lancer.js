@@ -116,14 +116,13 @@ overallHider.addEventListener('click', () => {
 
   if (isOpen) {
     // Image rotation and text change for open state
-    hiderImg.classList.add('rotate180')
-    hiderDiv.textContent = 'Hide Add-ons';
+    hiderDiv.innerHTML = "Hide Add-ons";
+    hiderImg.classList.add("rotate180");
     addOns.style.display = 'block';
   } else {
     // Image rotation and text change for closed state
-    hiderImg.classList.add('rotate0')
-    hiderDiv.textContent = 'Show Add-ons';
+    hiderDiv.innerHTML = "Show Add-ons";
+    hiderImg.classList.remove("rotate180");
     addOns.style.display = 'none';
-
   }
 });
