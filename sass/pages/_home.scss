@@ -488,6 +488,10 @@
           }
         }
       }
+
+      &--hider{
+        @extend .plan__overall-addon1--container--left--h4;
+      }
     }
   }
 }
