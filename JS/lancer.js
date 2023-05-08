@@ -17,6 +17,9 @@ const img2 = document.getElementById("img2");
 const img3 = document.getElementById("img3");
 const img4 = document.getElementById("img4");
 
+const overallHider = document.getElementById('overall-hider');
+const hiderImg = document.getElementById('hider-img');
+
 // looping through each of the section headings
 
 let prevButton = listSections[0]; // counter for the bottomSlider that would be moving to keep track of where it would move once any listSection has been clicked
