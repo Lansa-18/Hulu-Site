@@ -533,5 +533,13 @@
         margin: auto;
       }
     }
+
+    .rotate180{
+        transform: rotate(180deg);
+    }
+
+    .rotate0{
+        transform: rotate(0);
+    }
   }
 }
