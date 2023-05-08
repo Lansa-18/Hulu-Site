@@ -493,13 +493,20 @@
         @include bottom-h4-plan;
         padding: 2.5rem;
         border-bottom: 1px solid $border-grey-color;
-        
-        @include displayflex;
-        img{
-            border: 1px solid red;
-            width: 2.5%;
-            // margin-top: 4rem;
+        cursor: pointer;
+
+        &--content{
+            @include displayflex;
+            width: 15%;
+            margin: auto;
+
+            // img{
+            //     border: 1px solid red;
+            //     width: 2.5%;
+            //     // margin-top: 4rem;
+            // }
         }
+        
       }
     }
   }
