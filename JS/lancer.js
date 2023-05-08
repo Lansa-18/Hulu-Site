@@ -103,27 +103,27 @@ listSections.forEach((list) => {
 //   hiderImg.style.transform = 'rotate(360deg)';
 // });
 
-const overallHider = document.querySelector('#overall-hider');
-const hiderImg = document.querySelector('#hider-img');
-const hiderDiv = document.querySelector('#hider-div');
-const addOns = document.querySelector('#addon');
+// const overallHider = document.querySelector('#overall-hider');
+// const hiderImg = document.querySelector('#hider-img');
+// const hiderDiv = document.querySelector('#hider-div');
+// const addOns = document.querySelector('#addon');
 
-let isOpen = true;
+// let isOpen = true;
 
-overallHider.addEventListener('click', () => {
-  // Toggle the state of the open/close button
-  isOpen = !isOpen;
+// overallHider.addEventListener('click', () => {
+//   // Toggle the state of the open/close button
+//   isOpen = !isOpen;
 
-  if (isOpen) {
-    // Image rotation and text change for open state
-    hiderImg.style.transform = 'rotate(0deg)';
-    hiderDiv.textContent = 'Hide Add-ons';
-  } else {
-    // Image rotation and text change for closed state
-    hiderImg.style.transform = 'rotate(180deg)';
-    hiderDiv.textContent = 'Show Add-ons';
-  }
+//   if (isOpen) {
+//     // Image rotation and text change for open state
+//     hiderImg.style.transform = 'rotate(360deg)';
+//     hiderDiv.textContent = 'Hide Add-ons';
+//   } else {
+//     // Image rotation and text change for closed state
+//     hiderImg.style.transform = 'rotate(180deg)';
+//     hiderDiv.textContent = 'Show Add-ons';
+//   }
 
-  // Hide/show the add-ons content
-  addOns.style.display = isOpen ? 'block' : 'none';
-});
+//   // Hide/show the add-ons content
+//   addOns.style.display = isOpen ? 'block' : 'none';
+// });
