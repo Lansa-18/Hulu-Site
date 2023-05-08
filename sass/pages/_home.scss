@@ -333,7 +333,6 @@
         text-align: center;
         flex-basis: 60%;
         display: flex;
-        display: none;
 
         &--1 {
           flex-basis: 49%;
@@ -369,10 +368,9 @@
 
       // STYLINGS FOR THE ACTIVE PART OF THE FLEX
       &--flex-right2 {
-        // width: 85%;
         flex-basis: 30%;
-        display: flex;
-        // display: none;
+        // display: flex;
+        display: none;
         text-align: center;
 
         &--1 {
