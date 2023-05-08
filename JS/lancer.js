@@ -9,16 +9,16 @@ const events = document.getElementById("events");
 
 const switch_H2 = document.getElementById("switch-h2");
 const switchP = document.getElementById("switch-p");
-const sportContentText = document.querySelector('.sport__content--texts');
-const bottomSlider = document.querySelector('.headlines__flex--bottom-slider')
+const sportContentText = document.querySelector(".sport__content--texts");
+const bottomSlider = document.querySelector(".headlines__flex--bottom-slider");
 
 const img1 = document.getElementById("img1");
 const img2 = document.getElementById("img2");
 const img3 = document.getElementById("img3");
 const img4 = document.getElementById("img4");
 
-const overallHider = document.getElementById('overall-hider');
-const hiderImg = document.getElementById('hider-img');
+// const overallHider = document.getElementById("overall-hider");
+// const hiderImg = document.getElementById("hider-img");
 
 // looping through each of the section headings
 
@@ -32,8 +32,8 @@ listSections.forEach((list) => {
     e.target.classList.add("headline__active");
     sportContentText.classList.add("animate");
 
-    prevButton.classList.remove('active');
-    list.classList.add('active');
+    prevButton.classList.remove("active");
+    list.classList.add("active");
     prevButton = list;
 
     // Using the switch statement to change the background image and texts to match the section of the list that is clicked.
@@ -71,15 +71,59 @@ listSections.forEach((list) => {
       default:
         return;
     }
-    sportContentText.addEventListener('animationend', ()=>{
-        sportContentText.classList.remove("animate");
-    })
+    sportContentText.addEventListener("animationend", () => {
+      sportContentText.classList.remove("animate");
+    });
   });
 });
 
 // EVENT LISTENER HANDLING THE ADD-ON HIDER FUNCTIONALITY
+// const rotate180 = 360;
 
-overallHider.addEventListener('click', ()=>{
-    hiderImg.style.transform.rotate('180deg');
+// overallHider.addEventListener("click", () => {
+//   // GETTING THE CURRENT ANGLE OF THE IMG
+//   const currentRotation =
+//     getComputedStyle(hiderImg).getPropertyValue("transform");
+//   const angleRegex = /-?\d+(?:\.\d+)?/g;
+//   const currentAngle = parseFloat(currentRotation.match(angleRegex[0]));
+
+//   // ADDING THE DESIRED ROTATION ANGLE TO THE CURRENT ANGLE
+//   const newAngle = currentAngle + rotate180;
+
+//   // APPLYING THE NEW ROTATION
+//   hiderImg.style.transform = "center";
+//   hiderImg.style.transition = "transform 0.5s ease-out";
+//   hiderImg.style.transform = `rotate(${newAngle}deg)`;
+
+//   console.log(rotate180);
+//   console.log(currentRotation);
+// });
+
+// overallHider.addEventListener("click", () => {
+//   hiderImg.style.transform = 'rotate(360deg)';
+// });
+
+const overallHider = document.querySelector('#overall-hider');
+const hiderImg = document.querySelector('#hider-img');
+const hiderDiv = document.querySelector('#hider-div');
+const addOns = document.querySelector('#addon');
+
+let isOpen = true;
+
+overallHider.addEventListener('click', () => {
+  // Toggle the state of the open/close button
+  isOpen = !isOpen;
+
+  if (isOpen) {
+    // Image rotation and text change for open state
+    hiderImg.style.transform = 'rotate(0deg)';
+    hiderDiv.textContent = 'Hide Add-ons';
+  } else {
+    // Image rotation and text change for closed state
+    hiderImg.style.transform = 'rotate(180deg)';
+    hiderDiv.textContent = 'Show Add-ons';
+  }
+
+  // Hide/show the add-ons content
+  addOns.style.display = isOpen ? 'block' : 'none';
 });
-

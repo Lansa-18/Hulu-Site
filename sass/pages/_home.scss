@@ -518,6 +518,7 @@
     }
 
     &--hider {
+      color: $color-white;
       @include bottom-h4-plan;
       padding: 2.5rem;
       border-bottom: 1px solid $border-grey-color;
