@@ -333,7 +333,6 @@
       }
 
       &--flex-right1 {
-        // visibility: hidden;
         text-align: center;
         flex-basis: 60%;
         // display: flex;
@@ -369,6 +368,10 @@
           letter-spacing: 0;
           margin-bottom: 2.5rem;
         }
+      }
+
+      &--flex-right2{
+
       }
     }
 
