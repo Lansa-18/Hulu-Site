@@ -519,9 +519,9 @@
     }
 
     &--hider {
-    //   margin-top: 2rem;
+      //   margin-top: 2rem;
+      @include h3-plan;
       color: $color-white;
-      @include bottom-h4-plan;
       border-top: 1px solid $border-grey-color;
       border-bottom: 1px solid $border-grey-color;
       padding: 2.5rem;
@@ -529,17 +529,17 @@
 
       &--content {
         @include displayflex;
-        width: 20%;
+        width: 17%;
         margin: auto;
+        border: 1px solid red;
       }
-    }
 
-    .rotate180{
-        transform: rotate(180deg);
-    }
-
-    .rotate0{
-        transform: rotate(0);
+      h3{
+        
+      }
+      img {
+        width: 10%;
+      }
     }
   }
 }
