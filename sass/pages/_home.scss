@@ -239,11 +239,8 @@
       position: sticky;
       top: 0;
       background-color: $color-black;
-
-      &--container {
-        display: flex;
-        align-items: center;
-      }
+      display: flex;
+      align-items: center;
 
       &--flex-left {
         margin-right: 2rem;
@@ -335,8 +332,8 @@
       &--flex-right1 {
         text-align: center;
         flex-basis: 60%;
-        display: flex;
-        // display: none;
+        // display: flex;
+        display: none;
 
         &--1 {
           flex-basis: 49%;
@@ -372,9 +369,10 @@
 
       // STYLINGS FOR THE ACTIVE PART OF THE FLEX
       &--flex-right2 {
-        flex-basis: 15%;
-        // display: flex;
-        display: none;
+        width: 85%;
+        flex-basis: 50%;
+        display: flex;
+        // display: none;
         text-align: center;
         border: 1px solid blue;
 
@@ -401,6 +399,7 @@
           }
         }
       }
+
     }
 
     &-bottom1 {
