@@ -405,7 +405,6 @@
               font-size: 3.5rem;
               line-height: $lh132;
               @include default-typography;
-
             }
           }
 
@@ -416,12 +415,11 @@
         }
       }
 
-      &--text{
-
-        &--span{
-            font-size: 10px;
-            @include default-typography;
-            line-height: $lh146;
+      &--text {
+        &--span {
+          font-size: 10px;
+          @include default-typography;
+          line-height: $lh146;
         }
       }
     }
