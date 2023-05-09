@@ -344,7 +344,8 @@
         text-align: center;
 
         &--1 {
-          flex-basis: 33%;
+          // flex-basis: 10%;
+          border: 1px solid green;
           img {
             width: 70%;
           }
@@ -432,8 +433,9 @@
         border-bottom: 1px solid $border-grey-color;
 
         &--left {
-          flex-basis: 40%;
+          flex-basis: 30%;
           @include displayflex;
+          border: 1px solid blue;
 
           h4 {
             @include bottom-h4-plan;
@@ -446,12 +448,14 @@
 
         &--right {
           @include displayflex;
-          flex-basis: 60%;
+          flex-basis: 70%;
           text-align: center;
+          border: 1px solid red;
 
           &--h4-1 {
             @include bottom-h4-plan;
-            flex-basis: 49%;
+            flex-basis: 33%;
+            border: 1px solid white;
 
             &--span {
               color: $light-grey4;
