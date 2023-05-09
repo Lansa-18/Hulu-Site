@@ -301,8 +301,7 @@
       &--flex-right1 {
         text-align: center;
         flex-basis: 60%;
-        // display: flex;
-        display: none;
+        display: flex;
 
         &--1 {
           flex-basis: 49%;
@@ -339,8 +338,7 @@
       // STYLINGS FOR THE ACTIVE PART OF THE FLEX
       &--flex-right2 {
         flex-basis: 40%;
-        display: flex;
-        // display: none;
+        display: none;
         text-align: center;
 
         &--1 {
@@ -366,7 +364,6 @@
 
     &-bottom1 {
       color: $color-white;
-      display: none;
 
       &--container {
         @include displayflex;
@@ -422,6 +419,7 @@
 
     &-bottom2{
       color: $color-white;
+      display: none;
 
       &--container{
         @include displayflex;
