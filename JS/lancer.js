@@ -22,8 +22,8 @@ const hiderH3 = document.querySelector("#hider-h3");
 const hiderImg = document.querySelector("#hider-img");
 const addonDiv = document.querySelector("#addon");
 
-const stickyElement = document.querySelector(".plan__overall-middle");
-const stopStickingAt = document.querySelector("#overall-hider");
+// const stickyElement = document.querySelector(".plan__overall-middle");
+// const stopStickingAt = document.querySelector("#overall-hider");
 
 // looping through each of the section headings
 
@@ -100,12 +100,72 @@ hiderDiv.addEventListener("click", () => {
   }
 });
 
-window.addEventListener("scroll", () => {
-  if (window.pageYOffset >= stopStickingAt.offsetTop){
-    stickyElement.style.position = 'absolute';
-    stickyElement.style.top = `${stopStickingAt.offsetTop}px`
-  } else{
-    stickyElement.style.position = 'sticky';
-    stickyElement.style.top = '0'
-  }
-});
+// window.addEventListener("scroll", () => {
+//   if (window.pageYOffset >= stopStickingAt.offsetTop){
+//     stickyElement.style.position = 'absolute';
+//     stickyElement.style.top = `${stopStickingAt.offsetTop}px`
+//   } else{
+//     stickyElement.style.position = 'sticky';
+//     stickyElement.style.top = '0'
+//   }
+
+//   if (window.pageYOffset <= stickyElement.offsetTop) {
+//     stickyElement.style.position = 'sticky';
+//     stickyElement.style.top = '0';
+//   }
+// });
+
+
+// const stickyElement = document.querySelector(".plan__overall-middle");
+// const stopStickingAt = document.querySelector(".footer");
+// const originalPosition = stickyElement.getBoundingClientRect();
+
+// window.addEventListener("scroll", () => {
+//   const distanceFromTop = originalPosition.top - window.pageYOffset;
+
+//   if (distanceFromTop <= 0) {
+//     const maxAbsoluteDistanceFromTop = stopStickingAt.offsetTop - stickyElement.clientHeight;
+//     const absoluteDistanceFromTop = Math.min(maxAbsoluteDistanceFromTop, -distanceFromTop);
+//     stickyElement.style.position = "absolute";
+//     stickyElement.style.top = `${absoluteDistanceFromTop}px`;
+//   } else {
+//     stickyElement.style.position = "sticky";
+//     stickyElement.style.top = "0";
+//   }
+
+//   // reset position to original when stopping sticky
+//   if (stickyElement.style.position === "absolute" && distanceFromTop > 0) {
+//     stickyElement.style.position = "static";
+//     stickyElement.style.top = `${originalPosition.top}px`;
+//   }
+// });
+
+
+// const stickyElement = document.querySelector(".plan__overall-middle");
+// const stopStickingAt = document.querySelector("#overall-hider");
+// const originalPosition = stickyElement.getBoundingClientRect();
+// let isSticky = false;
+
+// window.addEventListener("scroll", () => {
+//   if (!isSticky && window.pageYOffset >= originalPosition.top) {
+//     stickyElement.style.position = "sticky";
+//     stickyElement.style.top = "0";
+//     isSticky = true;
+//   } else if (isSticky && window.pageYOffset >= stopStickingAt.offsetTop) {
+//     stickyElement.style.position = "absolute";
+//     stickyElement.style.top = `${stopStickingAt.offsetTop}px`;
+//     isSticky = false;
+//   } else if (isSticky) {
+//     stickyElement.style.top = "0";
+//   } else {
+//     stickyElement.style.position = "static";
+//     stickyElement.style.top = "auto";
+//   }
+// });
+
+
+
+
+
+
+
