@@ -422,6 +422,16 @@
       }
     }
 
+    &-bottom2{
+      color: $color-white;
+
+      &--container{
+        @include displayflex;
+        padding: 2rem 0;
+        border-bottom: 1px solid $border-grey-color;
+      }
+    }
+
     &-addon1 {
       display: none;
       margin-top: 10rem;
