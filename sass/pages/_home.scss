@@ -578,7 +578,9 @@
         }
 
         &--right{
-          
+          @include displayflex;
+          flex-basis: 70%;
+          text-align: center;
         }
       }
     }
