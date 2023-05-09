@@ -537,6 +537,29 @@
       }
     }
 
+    &-addon2{
+      margin-top: 10rem;
+      color: $color-white;
+
+      &--texts {
+        padding: 2.5rem 0;
+        border-bottom: 1px solid $border-grey-color;
+        h3 {
+          font-size: 3.2rem;
+          font-weight: 600;
+          line-height: 1.2;
+          letter-spacing: -0.2px;
+          margin-bottom: 1.3rem;
+        }
+
+        p {
+          font-size: $default-font-size;
+          @include default-typography;
+          line-height: 1.4;
+        }
+      }
+    }
+
     &--hider {
       //   margin-top: 2rem;
       color: $color-white;

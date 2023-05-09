@@ -85,20 +85,20 @@ listSections.forEach((list) => {
 // EVENT LISTENER HANDLING THE ADD-ON HIDER FUNCTIONALITY
 let isOpen = false;
 
-hiderDiv.addEventListener("click", () => {
-  isOpen = !isOpen;
-  if (isOpen) {
-    hiderDiv.style.borderTop = "none";
-    addonDiv.style.display = "block";
-    hiderImg.src = "./img/Dropdown_Up_Arrow.svg";
-    hiderH3.textContent = "Hide Add-ons";
-  } else {
-    addonDiv.style.display = "none";
-    hiderImg.src = "./img/Dropdown_Down_Arrow.svg";
-    hiderH3.textContent = "Show Add-ons";
-    hiderDiv.style.borderTop = "1px solid #c8c8c866";
-  }
-});
+// hiderDiv.addEventListener("click", () => {
+//   isOpen = !isOpen;
+//   if (isOpen) {
+//     hiderDiv.style.borderTop = "none";
+//     addonDiv.style.display = "block";
+//     hiderImg.src = "./img/Dropdown_Up_Arrow.svg";
+//     hiderH3.textContent = "Hide Add-ons";
+//   } else {
+//     addonDiv.style.display = "none";
+//     hiderImg.src = "./img/Dropdown_Down_Arrow.svg";
+//     hiderH3.textContent = "Show Add-ons";
+//     hiderDiv.style.borderTop = "1px solid #c8c8c866";
+//   }
+// });
 
 // window.addEventListener("scroll", () => {
 //   if (window.pageYOffset >= stopStickingAt.offsetTop){
