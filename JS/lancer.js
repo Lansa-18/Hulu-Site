@@ -113,14 +113,14 @@ let isOpen = false;
 hiderDiv.addEventListener("click", () => {
   isOpen = !isOpen;
   if (isOpen) {
+    hiderDiv.style.borderTop = 'none'
     addonDiv.style.display = "block";
-    addonDiv.style.transition = "transform .3s ease-in";
     hiderImg.src = "./img/Dropdown_Up_Arrow.svg";
     hiderH3.textContent = "Hide Add-ons";
   } else {
     addonDiv.style.display = "none";
-    addonDiv.style.transition = "transform .3s ease-in";
     hiderImg.src = "./img/Dropdown_Down_Arrow.svg";
     hiderH3.textContent = "Show Add-ons";
+    hiderDiv.style.borderTop = '1px solid #c8c8c866'
   }
 });
