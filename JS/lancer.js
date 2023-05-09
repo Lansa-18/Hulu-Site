@@ -103,7 +103,8 @@ listSections.forEach((list) => {
 //   hiderImg.style.transform = 'rotate(360deg)';
 // });
 
-const hiderDiv = document.querySelector("#hider-div");
+const hiderDiv = document.getElementById("overall-hider");
+const hiderH3 = document.querySelector("#hider-h3");
 const hiderImg = document.querySelector("#hider-img");
 const addonDiv = document.querySelector("#addon");
 
@@ -113,12 +114,13 @@ hiderDiv.addEventListener("click", () => {
   isOpen = !isOpen;
   if (isOpen) {
     addonDiv.style.display = "block";
-    hiderImg.classList.add("rotate-180");
-    hiderDiv.textContent = "Hide Add-ons";
+    addonDiv.style.transition = "transform .3s ease-in";
+    hiderImg.src = "./img/Dropdown_Up_Arrow.svg";
+    hiderH3.textContent = "Hide Add-ons";
   } else {
     addonDiv.style.display = "none";
-    hiderImg.classList.remove("rotate-180");
-    hiderImg.classList.add("rotate-0");
-    hiderDiv.textContent = "Show Add-ons";
+    addonDiv.style.transition = "transform .3s ease-in";
+    hiderImg.src = "./img/Dropdown_Down_Arrow.svg";
+    hiderH3.textContent = "Show Add-ons";
   }
 });
