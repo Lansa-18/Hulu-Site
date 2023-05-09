@@ -316,7 +316,7 @@
         }
 
         &--h3 {
-          margin-top: 2rem;
+          margin-top: 1rem;
           color: $light-grey3;
           text-transform: uppercase;
           font-size: $default-font-size;
@@ -342,11 +342,8 @@
         display: flex;
         // display: none;
         text-align: center;
-        border: 1px solid red;
 
         &--1 {
-          flex-basis: 5%;
-          border: 1px solid blue;
           img {
             width: 70%;
           }
@@ -358,8 +355,6 @@
             font-weight: 600;
             line-height: 1.32;
             letter-spacing: 0;
-            // width: 20%;
-            // margin: auto;
           }
 
           &:not(:last-child) {
