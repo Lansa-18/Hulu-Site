@@ -368,6 +368,7 @@
 
     &-bottom1 {
       color: $color-white;
+      display: none;
 
       &--container {
         @include displayflex;
