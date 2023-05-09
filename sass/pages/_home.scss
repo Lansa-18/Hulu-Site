@@ -244,7 +244,7 @@
 
       &--flex-left {
         margin-right: 2rem;
-        flex-basis: 40%;
+        flex-basis: 60%;
         color: $color-white;
         text-transform: uppercase;
         display: flex;
@@ -338,14 +338,15 @@
 
       // STYLINGS FOR THE ACTIVE PART OF THE FLEX
       &--flex-right2 {
-        flex-basis: 30%;
+        flex-basis: 40%;
         display: flex;
         // display: none;
         text-align: center;
+        border: 1px solid red;
 
         &--1 {
-          // flex-basis: 10%;
-          border: 1px solid green;
+          flex-basis: 5%;
+          border: 1px solid blue;
           img {
             width: 70%;
           }
@@ -357,8 +358,8 @@
             font-weight: 600;
             line-height: 1.32;
             letter-spacing: 0;
-            width: 70%;
-            margin: auto;
+            // width: 20%;
+            // margin: auto;
           }
 
           &:not(:last-child) {
@@ -435,7 +436,6 @@
         &--left {
           flex-basis: 30%;
           @include displayflex;
-          border: 1px solid blue;
 
           h4 {
             @include bottom-h4-plan;
@@ -450,12 +450,10 @@
           @include displayflex;
           flex-basis: 70%;
           text-align: center;
-          border: 1px solid red;
 
           &--h4-1 {
             @include bottom-h4-plan;
             flex-basis: 33%;
-            border: 1px solid white;
             
             #strikethrough-span{
               text-decoration: line-through;
