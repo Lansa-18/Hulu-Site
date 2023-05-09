@@ -22,8 +22,8 @@ const hiderH3 = document.querySelector("#hider-h3");
 const hiderImg = document.querySelector("#hider-img");
 const addonDiv = document.querySelector("#addon");
 
-const stickyElement = document.querySelector('.plan__overall-middle');
-const stopStickingAt = document.querySelector('.footer');
+const stickyElement = document.querySelector(".plan__overall-middle");
+const stopStickingAt = document.querySelector("#overall-hider");
 
 // looping through each of the section headings
 
@@ -88,7 +88,7 @@ let isOpen = false;
 hiderDiv.addEventListener("click", () => {
   isOpen = !isOpen;
   if (isOpen) {
-    hiderDiv.style.borderTop = 'none'
+    hiderDiv.style.borderTop = "none";
     addonDiv.style.display = "block";
     hiderImg.src = "./img/Dropdown_Up_Arrow.svg";
     hiderH3.textContent = "Hide Add-ons";
@@ -96,8 +96,16 @@ hiderDiv.addEventListener("click", () => {
     addonDiv.style.display = "none";
     hiderImg.src = "./img/Dropdown_Down_Arrow.svg";
     hiderH3.textContent = "Show Add-ons";
-    hiderDiv.style.borderTop = '1px solid #c8c8c866'
+    hiderDiv.style.borderTop = "1px solid #c8c8c866";
   }
 });
 
-
+window.addEventListener("scroll", () => {
+  if (window.pageYOffset >= stopStickingAt.offsetTop){
+    stickyElement.style.position = 'absolute';
+    stickyElement.style.top = `${stopStickingAt.offsetTop}px`
+  } else{
+    stickyElement.style.position = 'sticky';
+    stickyElement.style.top = '0'
+  }
+});
