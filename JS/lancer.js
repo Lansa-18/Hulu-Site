@@ -17,8 +17,13 @@ const img2 = document.getElementById("img2");
 const img3 = document.getElementById("img3");
 const img4 = document.getElementById("img4");
 
-// const overallHider = document.getElementById("overall-hider");
-// const hiderImg = document.getElementById("hider-img");
+const hiderDiv = document.getElementById("overall-hider");
+const hiderH3 = document.querySelector("#hider-h3");
+const hiderImg = document.querySelector("#hider-img");
+const addonDiv = document.querySelector("#addon");
+
+const stickyElement = document.querySelector('.plan__overall-middle');
+const stopStickingAt = document.querySelector('.footer');
 
 // looping through each of the section headings
 
@@ -78,36 +83,6 @@ listSections.forEach((list) => {
 });
 
 // EVENT LISTENER HANDLING THE ADD-ON HIDER FUNCTIONALITY
-// const rotate180 = 360;
-
-// overallHider.addEventListener("click", () => {
-//   // GETTING THE CURRENT ANGLE OF THE IMG
-//   const currentRotation =
-//     getComputedStyle(hiderImg).getPropertyValue("transform");
-//   const angleRegex = /-?\d+(?:\.\d+)?/g;
-//   const currentAngle = parseFloat(currentRotation.match(angleRegex[0]));
-
-//   // ADDING THE DESIRED ROTATION ANGLE TO THE CURRENT ANGLE
-//   const newAngle = currentAngle + rotate180;
-
-//   // APPLYING THE NEW ROTATION
-//   hiderImg.style.transform = "center";
-//   hiderImg.style.transition = "transform 0.5s ease-out";
-//   hiderImg.style.transform = `rotate(${newAngle}deg)`;
-
-//   console.log(rotate180);
-//   console.log(currentRotation);
-// });
-
-// overallHider.addEventListener("click", () => {
-//   hiderImg.style.transform = 'rotate(360deg)';
-// });
-
-const hiderDiv = document.getElementById("overall-hider");
-const hiderH3 = document.querySelector("#hider-h3");
-const hiderImg = document.querySelector("#hider-img");
-const addonDiv = document.querySelector("#addon");
-
 let isOpen = false;
 
 hiderDiv.addEventListener("click", () => {
@@ -124,3 +99,5 @@ hiderDiv.addEventListener("click", () => {
     hiderDiv.style.borderTop = '1px solid #c8c8c866'
   }
 });
+
+
