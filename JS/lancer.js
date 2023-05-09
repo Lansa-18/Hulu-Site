@@ -21,6 +21,7 @@ const hiderDiv = document.getElementById("overall-hider");
 const hiderH3 = document.querySelector("#hider-h3");
 const hiderImg = document.querySelector("#hider-img");
 const addonDiv = document.querySelector("#addon");
+const addonDiv2 = document.querySelector("#addon");
 
 // const stickyElement = document.querySelector(".plan__overall-middle");
 // const stopStickingAt = document.querySelector("#overall-hider");
@@ -85,20 +86,39 @@ listSections.forEach((list) => {
 // EVENT LISTENER HANDLING THE ADD-ON HIDER FUNCTIONALITY
 let isOpen = false;
 
-// hiderDiv.addEventListener("click", () => {
-//   isOpen = !isOpen;
-//   if (isOpen) {
-//     hiderDiv.style.borderTop = "none";
-//     addonDiv.style.display = "block";
-//     hiderImg.src = "./img/Dropdown_Up_Arrow.svg";
-//     hiderH3.textContent = "Hide Add-ons";
-//   } else {
-//     addonDiv.style.display = "none";
-//     hiderImg.src = "./img/Dropdown_Down_Arrow.svg";
-//     hiderH3.textContent = "Show Add-ons";
-//     hiderDiv.style.borderTop = "1px solid #c8c8c866";
-//   }
-// });
+hiderDiv.addEventListener("click", () => {
+  isOpen = !isOpen;
+  if (isOpen) {
+    hiderDiv.style.borderTop = "none";
+    addonDiv.style.display = "block";
+    hiderImg.src = "./img/Dropdown_Up_Arrow.svg";
+    hiderH3.textContent = "Hide Add-ons";
+  } else {
+    addonDiv.style.display = "none";
+    hiderImg.src = "./img/Dropdown_Down_Arrow.svg";
+    hiderH3.textContent = "Show Add-ons";
+    hiderDiv.style.borderTop = "1px solid #c8c8c866";
+  }
+});
+
+// for the second add-on
+
+let isOpen2 = false;
+
+hiderDiv.addEventListener("click", () => {
+  isOpen2 = !isOpen2;
+  if (isOpen2) {
+    hiderDiv.style.borderTop = "none";
+    addonDiv2.style.display = "block";
+    hiderImg.src = "./img/Dropdown_Up_Arrow.svg";
+    hiderH3.textContent = "Hide Add-ons";
+  } else {
+    addonDiv2.style.display = "none";
+    hiderImg.src = "./img/Dropdown_Down_Arrow.svg";
+    hiderH3.textContent = "Show Add-ons";
+    hiderDiv.style.borderTop = "1px solid #c8c8c866";
+  }
+});
 
 // window.addEventListener("scroll", () => {
 //   if (window.pageYOffset >= stopStickingAt.offsetTop){
