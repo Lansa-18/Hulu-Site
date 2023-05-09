@@ -456,7 +456,11 @@
             @include bottom-h4-plan;
             flex-basis: 33%;
             border: 1px solid white;
-
+            
+            #strikethrough-span{
+              text-decoration: line-through;
+              display: block;
+            }
             &--span {
               color: $light-grey4;
               font-size: 3.5rem;
