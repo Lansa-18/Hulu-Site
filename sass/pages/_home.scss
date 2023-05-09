@@ -581,12 +581,10 @@
           @include displayflex;
           flex-basis: 75%;
           text-align: center;
-          border: 1px solid blue;
 
           &--h4-1 {
             @include bottom-h4-plan;
             flex-basis: 33%;
-            border: 1px solid red;
 
             &--span {
               color: $light-grey4;
