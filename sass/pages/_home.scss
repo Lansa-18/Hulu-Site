@@ -558,6 +558,29 @@
           line-height: 1.4;
         }
       }
+
+      &--container{
+        @include displayflex;
+        padding: 2rem 0;
+        border-bottom: 1px solid $border-grey-color;
+
+        &--left {
+          flex-basis: 40%;
+          @include displayflex;
+
+          h4 {
+            @include bottom-h4-plan;
+          }
+
+          img {
+            cursor: pointer;
+          }
+        }
+
+        &--right{
+          
+        }
+      }
     }
 
     &--hider {
