@@ -4,5 +4,29 @@
     
     &__container{
         @include margin-auto2;
+
+        &--flex{
+            display: flex;
+            
+            &--left{    
+                flex-basis: 65%;
+                border: 1px solid red;
+
+
+                &--h3{
+                    font-size: 1.2rem;
+                    font-weight: 500;
+                    line-height: 1;
+                    letter-spacing: 0.6px;
+                    text-transform: uppercase;
+                }
+            }
+
+            &--right{
+                flex-basis: 35%;
+                border: 1px solid blue;
+
+            }
+        }
     }
 }
