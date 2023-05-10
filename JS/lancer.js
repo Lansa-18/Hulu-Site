@@ -1,32 +1,24 @@
 "use strict";
 const sectionSports = document.querySelector(".section__sport");
-
 const listSections = document.querySelectorAll(".headlines__text");
-
 const sport = document.getElementById("sports");
 const news = document.getElementById("news");
 const events = document.getElementById("events");
-
 const switch_H2 = document.getElementById("switch-h2");
 const switchP = document.getElementById("switch-p");
 const sportContentText = document.querySelector(".sport__content--texts");
 const bottomSlider = document.querySelector(".headlines__flex--bottom-slider");
-
 const img1 = document.getElementById("img1");
 const img2 = document.getElementById("img2");
 const img3 = document.getElementById("img3");
 const img4 = document.getElementById("img4");
-
 const hiderDiv = document.getElementById("overall-hider");
 const hiderH3 = document.querySelector("#hider-h3");
 const hiderImg = document.querySelector("#hider-img");
-
 const toggleBtn = document.querySelector(".toggle--button");
 const toggleBg = document.querySelector(".toggle");
-
 const flexRight1 = document.querySelector(".plan__overall-middle--flex-right1");
 const flexRight2 = document.querySelector(".plan__overall-middle--flex-right2");
-
 const bottom1 = document.querySelector(".plan__overall-bottom1");
 const bottom2 = document.querySelector(".plan__overall-bottom2");
 
@@ -54,7 +46,6 @@ const addonOpener = (addonId) => {
 // const stopStickingAt = document.querySelector("#overall-hider");
 
 // looping through each of the section headings
-
 let prevButton = listSections[0]; // counter for the bottomSlider that would be moving to keep track of where it would move once any listSection has been clicked
 
 listSections.forEach((list) => {
