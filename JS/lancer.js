@@ -143,3 +143,7 @@ listSections.forEach((list) => {
 });
 
 toggleBg.addEventListener("click", toggler);
+
+window.addEventListener('scroll', ()=>{
+  const stickyDiv = document.querySelector('.')
+})
