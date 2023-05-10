@@ -54,17 +54,16 @@ const bottom2 = document.querySelector(".plan__overall-bottom2");
 // };
 
 let openedAddon = null;
-
 const addonOpener = (addonId, isOpenInitially = false) => {
   const addon = document.getElementById(addonId);
+
   let isOpen = isOpenInitially;
   if (isOpen) {
-    addon.style.display = "block";
+    addon.style.display = "none";
     openedAddon = addon;
   }
 
   hiderDiv.addEventListener("click", () => {
-    // Hide the previously opened addon
     if (openedAddon !== null && openedAddon !== addon) {
       openedAddon.style.display = "none";
     }
@@ -75,21 +74,21 @@ const addonOpener = (addonId, isOpenInitially = false) => {
       addon.style.display = "block";
       hiderImg.src = "./img/Dropdown_Up_Arrow.svg";
       hiderH3.textContent = "Hide Add-ons";
+
+      // Setting the openedAddon to the addon
       openedAddon = addon;
     } else {
       addon.style.display = "none";
       hiderImg.src = "./img/Dropdown_Down_Arrow.svg";
       hiderH3.textContent = "Show Add-ons";
       hiderDiv.style.borderTop = "1px solid #c8c8c866";
+      // Resetting the openedAddon to null
       openedAddon = null;
     }
   });
 };
 
-// Show the default addon (addon1) by default
 addonOpener('addon1', true);
-
-
 
 const toggler = () => {
   if (!toggleBtn.classList.contains("toggle-active")) {
@@ -171,4 +170,4 @@ listSections.forEach((list) => {
   });
 });
 
-toggleBtn.addEventListener("click", toggler);
+toggleBg.addEventListener("click", toggler);
