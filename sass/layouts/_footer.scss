@@ -1,14 +1,13 @@
 .footer{
     background-color: $footer-bg;
     height: 82vh;
-    // position: relative;
     
     &__container{
         @include margin-auto2;
-        // @include center-vertical-horizontal;
 
         &--flex{
             display: flex;
+            padding-top: 6rem;
             
             &--left{    
                 flex-basis: 65%;
