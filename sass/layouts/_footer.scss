@@ -24,8 +24,9 @@
                 &--nav-flex{
                     &--ul{
                         list-style: none;
-
-
+                        &--child{
+                            margin-top: .8rem;
+                        }
                     }
                 }
             }
