@@ -144,31 +144,28 @@ listSections.forEach((list) => {
 
 toggleBg.addEventListener("click", toggler);
 
-// window.addEventListener('scroll', ()=>{
-//   const stickyDiv = document.querySelector('.plan__overall-middle');
-//   const desiredScrollPosition = 3555.35;
-
-//   if (window.pageYOffset = desiredScrollPosition) {
-//     console.log("Reached desired scroll position");
-//     stickyDiv.style.position = 'static';
-//     stickyDiv.style.top = '3555.5px';
-//   } else {
-//     stickyDiv.style.position = 'sticky';
-//     stickyDiv.style.top = '0';
-//   }
-// });
-
 window.addEventListener('scroll', ()=>{
-  const stickyDiv = document.querySelector(".plan__overall-middle");
+  const stickyDiv = document.querySelector('.plan__overall-middle');
   const desiredScrollPosition = 3555.35;
 
   if (window.pageYOffset >= desiredScrollPosition) {
     console.log("Reached desired scroll position");
-    stickyDiv.style.position = "static";
-    stickyDiv.style.top = `${desiredScrollPosition}px`;
+    stickyDiv.style.position = 'static';
+    stickyDiv.style.top = '3555.5px';
   } else {
-    console.log("Scrolling up");
-    stickyDiv.style.position = "sticky";
-    stickyDiv.style.top = "0";
+    stickyDiv.style.position = 'sticky';
+    stickyDiv.style.top = '0';
   }
-})
+});
+
+// window.addEventListener('scroll', () => {
+//   const stickyDiv = document.querySelector('.plan__overall-middle');
+//   const desiredScrollPosition = 3555.35;
+
+//   if (window.pageYOffset >= desiredScrollPosition) {
+//     stickyDiv.style.top = `${window.pageYOffset - desiredScrollPosition}px`;
+//   } else {
+//     stickyDiv.style.top = '0';
+//   }
+// });
+
