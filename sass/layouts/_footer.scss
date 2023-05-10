@@ -1,16 +1,19 @@
 .footer{
     background-color: $footer-bg;
     height: 82vh;
+    position: relative;
     
     &__container{
         @include margin-auto2;
+        @include center-vertical-horizontal;
 
         &--flex{
             display: flex;
             
             &--left{    
-                flex-basis: 65%;
+                flex-basis: 70%;
                 border: 1px solid red;
+                margin-right: 2.5rem;
 
 
                 &--h3{
@@ -34,8 +37,9 @@
             }
 
             &--right{
-                flex-basis: 35%;
+                flex-basis: 25%;
                 display: flex;
+                justify-content: space-between;
                 border: 1px solid blue;
 
             }
