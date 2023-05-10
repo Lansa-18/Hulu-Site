@@ -26,6 +26,9 @@ const addonDiv2 = document.querySelector("#addon");
 const toggleBtn = document.querySelector(".toggle--button");
 const toggleBg = document.querySelector(".toggle");
 
+const flexRight1 = document.querySelector('.plan__overall-middle--flex-right1');
+const flexRight2 = document.querySelector('.plan__overall-middle--flex-right2');
+
 // const stickyElement = document.querySelector(".plan__overall-middle");
 // const stopStickingAt = document.querySelector("#overall-hider");
 
@@ -126,14 +129,18 @@ hiderDiv.addEventListener("click", () => {
 // function that activates the toggler button
 
 toggleBtn.addEventListener("click", () => {
-  if (!toggleBtn.classList.contains('toggle-active')) {
-      toggleBtn.classList.add('toggle-active');
-      toggleBtn.style.transform = 'translateX(3rem)';
-      toggleBg.style.backgroundColor = '#1ce783';
-  } else{
-    toggleBtn.style.transform = 'translateX(0)';
-    toggleBg.style.backgroundColor = '#424957';
-    toggleBtn.classList.remove('toggle-active')
-  }
+  if (!toggleBtn.classList.contains("toggle-active")) {
+    toggleBtn.classList.add("toggle-active");
+    toggleBtn.style.transform = "translateX(3rem)";
+    toggleBg.style.backgroundColor = "#1ce783";
+    flexRight1.style.display = 'none';
+    flexRight2.style.display = 'flex';
 
+  } else {
+    toggleBtn.style.transform = "translateX(0)";
+    toggleBg.style.backgroundColor = "#424957";
+    toggleBtn.classList.remove("toggle-active");
+    flexRight1.style.display = 'flex';
+    flexRight2.style.display = 'none';
+  }
 });
