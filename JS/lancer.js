@@ -23,12 +23,48 @@ const bottom1 = document.querySelector(".plan__overall-bottom1");
 const bottom2 = document.querySelector(".plan__overall-bottom2");
 
 // FUNCTION THAT ALLOWS THE ADDON OPENER TO WORK
+
+// let openedAddon = null;
+// const addonOpener = (addonId) => {
+//   const addon = document.getElementById(addonId);
+//   let isOpen = false;
+//   hiderDiv.addEventListener("click", () => {
+//     // Hiding the previously opened addon
+//     if (openedAddon !== null && openedAddon !== addon) {
+//       openedAddon.style.display = "none";
+//     }
+
+//     isOpen = !isOpen;
+//     if (isOpen) {
+//       hiderDiv.style.borderTop = "none";
+//       addon.style.display = "block";
+//       hiderImg.src = "./img/Dropdown_Up_Arrow.svg";
+//       hiderH3.textContent = "Hide Add-ons";
+//       // Setting the openedAddon to the addon
+//       openedAddon = addon;
+//     } else {
+//       addon.style.display = "none";
+//       hiderImg.src = "./img/Dropdown_Down_Arrow.svg";
+//       hiderH3.textContent = "Show Add-ons";
+//       hiderDiv.style.borderTop = "1px solid #c8c8c866";
+//       // Resetting the openedAddon to null
+//       openedAddon = null;
+//     }
+//   });
+// };
+
 let openedAddon = null;
-const addonOpener = (addonId) => {
+
+const addonOpener = (addonId, isOpenInitially = false) => {
   const addon = document.getElementById(addonId);
-  let isOpen = false;
+  let isOpen = isOpenInitially;
+  if (isOpen) {
+    addon.style.display = "block";
+    openedAddon = addon;
+  }
+
   hiderDiv.addEventListener("click", () => {
-    // Hiding the previously opened addon
+    // Hide the previously opened addon
     if (openedAddon !== null && openedAddon !== addon) {
       openedAddon.style.display = "none";
     }
@@ -39,18 +75,21 @@ const addonOpener = (addonId) => {
       addon.style.display = "block";
       hiderImg.src = "./img/Dropdown_Up_Arrow.svg";
       hiderH3.textContent = "Hide Add-ons";
-      // Setting the openedAddon to the addon
       openedAddon = addon;
     } else {
       addon.style.display = "none";
       hiderImg.src = "./img/Dropdown_Down_Arrow.svg";
       hiderH3.textContent = "Show Add-ons";
       hiderDiv.style.borderTop = "1px solid #c8c8c866";
-      // Resetting the openedAddon to null
       openedAddon = null;
     }
   });
 };
+
+// Show the default addon (addon1) by default
+addonOpener('addon1', true);
+
+
 
 const toggler = () => {
   if (!toggleBtn.classList.contains("toggle-active")) {
@@ -133,6 +172,3 @@ listSections.forEach((list) => {
 });
 
 toggleBtn.addEventListener("click", toggler);
-hiderDiv.addEventListener("click", () => {
-  addonOpener("addon1");
-});
