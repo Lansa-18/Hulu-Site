@@ -20,8 +20,6 @@ const img4 = document.getElementById("img4");
 const hiderDiv = document.getElementById("overall-hider");
 const hiderH3 = document.querySelector("#hider-h3");
 const hiderImg = document.querySelector("#hider-img");
-const addonDiv = document.querySelector("#addon");
-const addonDivTwo = document.querySelector("#addon2");
 
 const toggleBtn = document.querySelector(".toggle--button");
 const toggleBg = document.querySelector(".toggle");
@@ -31,6 +29,26 @@ const flexRight2 = document.querySelector(".plan__overall-middle--flex-right2");
 
 const bottom1 = document.querySelector(".plan__overall-bottom1");
 const bottom2 = document.querySelector(".plan__overall-bottom2");
+
+// FUNCTION THAT ALLOWS THE ADDON OPENER TO WORK
+const addonOpener = (addonId) => {
+  const addon = document.getElementById(addonId);  
+  let isOpen = false;
+  hiderDiv.addEventListener("click", () => {
+    isOpen = !isOpen;
+    if (isOpen) {
+      hiderDiv.style.borderTop = "none";
+      addon.style.display = "block";
+      hiderImg.src = "./img/Dropdown_Up_Arrow.svg";
+      hiderH3.textContent = "Hide Add-ons";
+    } else {
+      addon.style.display = "none";
+      hiderImg.src = "./img/Dropdown_Down_Arrow.svg";
+      hiderH3.textContent = "Show Add-ons";
+      hiderDiv.style.borderTop = "1px solid #c8c8c866";
+    }
+  });
+};
 
 // const stickyElement = document.querySelector(".plan__overall-middle");
 // const stopStickingAt = document.querySelector("#overall-hider");
@@ -91,26 +109,6 @@ listSections.forEach((list) => {
     });
   });
 });
-// for the second add-on
-
-// let isOpen2 = false;
-
-// hiderDiv.addEventListener("click", () => {
-//   isOpen2 = !isOpen2;
-//   if (isOpen2) {
-//     hiderDiv.style.borderTop = "none";
-//     addonDiv2.style.display = "block";
-//     hiderImg.src = "./img/Dropdown_Up_Arrow.svg";
-//     hiderH3.textContent = "Hide Add-ons";
-//   } else {
-//     addonDiv2.style.display = "none";
-//     hiderImg.src = "./img/Dropdown_Down_Arrow.svg";
-//     hiderH3.textContent = "Show Add-ons";
-//     hiderDiv.style.borderTop = "1px solid #c8c8c866";
-//   }
-// });
-
-// function that activates the toggler button
 
 toggleBtn.addEventListener("click", () => {
   if (!toggleBtn.classList.contains("toggle-active")) {
@@ -121,22 +119,7 @@ toggleBtn.addEventListener("click", () => {
     flexRight2.style.display = "flex";
     bottom1.style.display = "none";
     bottom2.style.display = "block";
-    let isOpen = false;
-
-    hiderDiv.addEventListener("click", () => {
-      isOpen = !isOpen;
-      if (isOpen) {
-        hiderDiv.style.borderTop = "none";
-        addonDivTwo.style.display = "block";
-        hiderImg.src = "./img/Dropdown_Up_Arrow.svg";
-        hiderH3.textContent = "Hide Add-ons";
-      } else {
-        addonDivTwo.style.display = "none";
-        hiderImg.src = "./img/Dropdown_Down_Arrow.svg";
-        hiderH3.textContent = "Show Add-ons";
-        hiderDiv.style.borderTop = "1px solid #c8c8c866";
-      }
-    });
+    addonOpener('addon2');
   } else {
     toggleBtn.style.transform = "translateX(0)";
     toggleBg.style.backgroundColor = "#424957";
@@ -144,43 +127,11 @@ toggleBtn.addEventListener("click", () => {
     flexRight2.style.display = "none";
     bottom1.style.display = "block";
     bottom2.style.display = "none";
-    let isOpen = false;
-
-    hiderDiv.addEventListener("click", () => {
-      isOpen = !isOpen;
-      if (isOpen) {
-        hiderDiv.style.borderTop = "none";
-        addonDiv.style.display = "block";
-        hiderImg.src = "./img/Dropdown_Up_Arrow.svg";
-        hiderH3.textContent = "Hide Add-ons";
-      } else {
-        addonDiv.style.display = "none";
-        hiderImg.src = "./img/Dropdown_Down_Arrow.svg";
-        hiderH3.textContent = "Show Add-ons";
-        hiderDiv.style.borderTop = "1px solid #c8c8c866";
-      }
-    });
+    addonOpener('addon');
     toggleBtn.classList.remove("toggle-active");
   }
 });
+addonOpener('addon');
 
-// EVENT LISTENER HANDLING THE ADD-ON HIDER FUNCTIONALITY
 
-const addonOpener = () => {
-  let isOpen = false;
 
-  hiderDiv.addEventListener("click", () => {
-    isOpen = !isOpen;
-    if (isOpen) {
-      hiderDiv.style.borderTop = "none";
-      addonDiv.style.display = "block";
-      hiderImg.src = "./img/Dropdown_Up_Arrow.svg";
-      hiderH3.textContent = "Hide Add-ons";
-    } else {
-      addonDiv.style.display = "none";
-      hiderImg.src = "./img/Dropdown_Down_Arrow.svg";
-      hiderH3.textContent = "Show Add-ons";
-      hiderDiv.style.borderTop = "1px solid #c8c8c866";
-    }
-  });
-};
