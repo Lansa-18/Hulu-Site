@@ -23,23 +23,55 @@ const bottom1 = document.querySelector(".plan__overall-bottom1");
 const bottom2 = document.querySelector(".plan__overall-bottom2");
 
 // FUNCTION THAT ALLOWS THE ADDON OPENER TO WORK
+let openedAddon = null;
 const addonOpener = (addonId) => {
-  const addon = document.getElementById(addonId);  
+  const addon = document.getElementById(addonId);
   let isOpen = false;
   hiderDiv.addEventListener("click", () => {
+    // Hiding the previously opened addon
+    if (openedAddon !== null && openedAddon !== addon) {
+      openedAddon.style.display = "none";
+    }
+
     isOpen = !isOpen;
     if (isOpen) {
       hiderDiv.style.borderTop = "none";
       addon.style.display = "block";
       hiderImg.src = "./img/Dropdown_Up_Arrow.svg";
       hiderH3.textContent = "Hide Add-ons";
+      // Setting the openedAddon to the addon
+      openedAddon = addon;
     } else {
       addon.style.display = "none";
       hiderImg.src = "./img/Dropdown_Down_Arrow.svg";
       hiderH3.textContent = "Show Add-ons";
       hiderDiv.style.borderTop = "1px solid #c8c8c866";
+      // Resetting the openedAddon to null
+      openedAddon = null;
     }
   });
+};
+
+const toggler = () => {
+  if (!toggleBtn.classList.contains("toggle-active")) {
+    toggleBtn.classList.add("toggle-active");
+    toggleBtn.style.transform = "translateX(3rem)";
+    toggleBg.style.backgroundColor = "#1ce783";
+    flexRight1.style.display = "none";
+    flexRight2.style.display = "flex";
+    bottom1.style.display = "none";
+    bottom2.style.display = "block";
+    addonOpener("addon2");
+  } else {
+    toggleBtn.style.transform = "translateX(0)";
+    toggleBg.style.backgroundColor = "#424957";
+    flexRight1.style.display = "flex";
+    flexRight2.style.display = "none";
+    bottom1.style.display = "block";
+    bottom2.style.display = "none";
+    toggleBtn.classList.remove("toggle-active");
+    addonOpener("addon1");
+  }
 };
 
 // const stickyElement = document.querySelector(".plan__overall-middle");
@@ -47,7 +79,6 @@ const addonOpener = (addonId) => {
 
 // looping through each of the section headings
 let prevButton = listSections[0]; // counter for the bottomSlider that would be moving to keep track of where it would move once any listSection has been clicked
-
 listSections.forEach((list) => {
   list.addEventListener("click", (e) => {
     listSections.forEach((list) => {
@@ -101,28 +132,7 @@ listSections.forEach((list) => {
   });
 });
 
-toggleBtn.addEventListener("click", () => {
-  if (!toggleBtn.classList.contains("toggle-active")) {
-    toggleBtn.classList.add("toggle-active");
-    toggleBtn.style.transform = "translateX(3rem)";
-    toggleBg.style.backgroundColor = "#1ce783";
-    flexRight1.style.display = "none";
-    flexRight2.style.display = "flex";
-    bottom1.style.display = "none";
-    bottom2.style.display = "block";
-    addonOpener('addon2');
-  } else {
-    toggleBtn.style.transform = "translateX(0)";
-    toggleBg.style.backgroundColor = "#424957";
-    flexRight1.style.display = "flex";
-    flexRight2.style.display = "none";
-    bottom1.style.display = "block";
-    bottom2.style.display = "none";
-    addonOpener('addon');
-    toggleBtn.classList.remove("toggle-active");
-  }
+toggleBtn.addEventListener("click", toggler);
+hiderDiv.addEventListener("click", () => {
+  addonOpener("addon1");
 });
-addonOpener('addon');
-
-
-
