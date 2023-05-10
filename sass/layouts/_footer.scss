@@ -2,4 +2,7 @@
     background-color: $footer-bg-color;
     height: 82vh;
     
+    &__container{
+        @include margin-auto2;
+    }
 }
