@@ -30,7 +30,7 @@ const flexRight1 = document.querySelector('.plan__overall-middle--flex-right1');
 const flexRight2 = document.querySelector('.plan__overall-middle--flex-right2');
 
 const bottom1 = document.querySelector('.plan__overall-bottom1');
-const bottom2 = document.querySelector('.plan__overall-bottom1');
+const bottom2 = document.querySelector('.plan__overall-bottom2');
 
 // const stickyElement = document.querySelector(".plan__overall-middle");
 // const stopStickingAt = document.querySelector("#overall-hider");
@@ -138,7 +138,7 @@ toggleBtn.addEventListener("click", () => {
     toggleBg.style.backgroundColor = "#1ce783";
     flexRight1.style.display = 'none';
     flexRight2.style.display = 'flex';
-    // bottom1.style.display = 'none';
+    bottom1.style.display = 'none';
     bottom2.style.display = 'block';
 
   } else {
@@ -146,7 +146,7 @@ toggleBtn.addEventListener("click", () => {
     toggleBg.style.backgroundColor = "#424957";
     flexRight1.style.display = 'flex';
     flexRight2.style.display = 'none';
-    // bottom1.style.display = 'block';
+    bottom1.style.display = 'block';
     bottom2.style.display = 'none';
     toggleBtn.classList.remove("toggle-active");
   }
