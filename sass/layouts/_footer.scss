@@ -1,5 +1,5 @@
 .footer{
-    background-color: $footer-bg-color;
+    background-color: $footer-bg;
     height: 82vh;
     
     &__container{
@@ -22,9 +22,10 @@
                 }
 
                 &--nav-flex{
-
                     &--ul{
                         list-style: none;
+
+
                     }
                 }
             }
@@ -33,6 +34,15 @@
                 flex-basis: 35%;
                 border: 1px solid blue;
 
+            }
+
+            &--link{
+                color: $footer-link;
+                text-decoration: none;
+                font-size: $default-font-size;
+                font-weight: 400;
+                line-height: 1.4;
+                letter-spacing: 0;
             }
         }
     }
