@@ -284,7 +284,6 @@
               transition: 0.2s;
             }
           }
-          
         }
 
         &--3 {
@@ -417,11 +416,11 @@
       }
     }
 
-    &-bottom2{
+    &-bottom2 {
       color: $color-white;
       display: none;
 
-      &--container{
+      &--container {
         @include displayflex;
         padding: 2rem 0;
         border-bottom: 1px solid $border-grey-color;
@@ -447,8 +446,8 @@
           &--h4-1 {
             @include bottom-h4-plan;
             flex-basis: 33%;
-            
-            #strikethrough-span{
+
+            #strikethrough-span {
               text-decoration: line-through;
               display: block;
               color: $light-grey5;
@@ -535,7 +534,7 @@
       }
     }
 
-    &-addon2{
+    &-addon2 {
       display: none;
       margin-top: 10rem;
       color: $color-white;
@@ -558,7 +557,7 @@
         }
       }
 
-      &--container{
+      &--container {
         @include displayflex;
         padding: 2rem 0;
         border-bottom: 1px solid $border-grey-color;
@@ -576,7 +575,7 @@
           }
         }
 
-        &--right{
+        &--right {
           @include displayflex;
           flex-basis: 75%;
           text-align: center;
@@ -610,8 +609,8 @@
         margin: auto;
         // transition: all .3s;
         h3 {
-            font-weight: 400;
-            font-size: 1.6rem;
+          font-weight: 400;
+          font-size: 1.6rem;
         }
 
         img {
