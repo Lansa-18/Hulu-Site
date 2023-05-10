@@ -24,35 +24,6 @@ const bottom2 = document.querySelector(".plan__overall-bottom2");
 
 // FUNCTION THAT ALLOWS THE ADDON OPENER TO WORK
 
-// let openedAddon = null;
-// const addonOpener = (addonId) => {
-//   const addon = document.getElementById(addonId);
-//   let isOpen = false;
-//   hiderDiv.addEventListener("click", () => {
-//     // Hiding the previously opened addon
-//     if (openedAddon !== null && openedAddon !== addon) {
-//       openedAddon.style.display = "none";
-//     }
-
-//     isOpen = !isOpen;
-//     if (isOpen) {
-//       hiderDiv.style.borderTop = "none";
-//       addon.style.display = "block";
-//       hiderImg.src = "./img/Dropdown_Up_Arrow.svg";
-//       hiderH3.textContent = "Hide Add-ons";
-//       // Setting the openedAddon to the addon
-//       openedAddon = addon;
-//     } else {
-//       addon.style.display = "none";
-//       hiderImg.src = "./img/Dropdown_Down_Arrow.svg";
-//       hiderH3.textContent = "Show Add-ons";
-//       hiderDiv.style.borderTop = "1px solid #c8c8c866";
-//       // Resetting the openedAddon to null
-//       openedAddon = null;
-//     }
-//   });
-// };
-
 let openedAddon = null;
 const addonOpener = (addonId, isOpenInitially = false) => {
   const addon = document.getElementById(addonId);
@@ -164,6 +135,7 @@ listSections.forEach((list) => {
       default:
         return;
     }
+    // Using the animationend event listener to remove the animate class once the animation ends.
     sportContentText.addEventListener("animationend", () => {
       sportContentText.classList.remove("animate");
     });
