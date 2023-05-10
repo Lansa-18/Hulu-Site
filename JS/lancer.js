@@ -145,5 +145,12 @@ listSections.forEach((list) => {
 toggleBg.addEventListener("click", toggler);
 
 window.addEventListener('scroll', ()=>{
-  const stickyDiv = document.querySelector('.')
-})
+  const stickyDiv = document.querySelector('.plan__overall-middle');
+  const desiredScrollPosition = 3555.35;
+
+  if (window.pageYOffset >= desiredScrollPosition) {
+    stickyDiv.classList.add('original-position');
+  } else {
+    stickyDiv.classList.remove('original-position');
+  }
+});
