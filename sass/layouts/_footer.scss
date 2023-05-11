@@ -62,6 +62,8 @@
 
         &--links-flex{
             margin-top: 5rem;
+            margin-left: -3.2rem;
+            margin-bottom: 3.2rem;
             @include displayflex;
             flex-wrap: wrap;
             border: 1px solid red;
@@ -74,8 +76,7 @@
             line-height: $lh132;
             
             &:not(:last-child){
-                margin-bottom: 1rem;
-                margin-right: 1rem;
+               margin-left: 3.2rem;
             }
 
             span{
