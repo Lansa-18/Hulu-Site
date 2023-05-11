@@ -58,6 +58,10 @@
             display: flex;
             justify-content: space-between;
             width: 18%;
+
+            img{
+                cursor: pointer;
+            }
         }
 
         &--links-flex{
