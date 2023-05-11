@@ -64,13 +64,13 @@
             margin-top: 5rem;
             @include displayflex;
             flex-wrap: wrap;
-            border: 1px solid red;
         }
 
         &--links{
             display: inline-block;
             color: $footer-link;
             line-height: $lh132;
+            margin-bottom: 1rem;
             
             &:not(:last-child){
                margin-right: 2.2rem;
