@@ -48,9 +48,17 @@
         letter-spacing: 0;
       }
     }
+    
     &--socials{
+        margin-top: 7rem;
         border-top: 2px solid $border-grey-color2;
         padding: 4rem 0;
+
+        .social__img--flex{
+            display: flex;
+            justify-content: space-between;
+            width: 18%;
+        }
     }
   }
 }
