@@ -65,11 +65,16 @@
             flex-wrap: wrap;
             align-items: center;
             border: 1px solid red;
+
+           
         }
 
         &--links{
             color: $footer-link;
             border: 1px solid blue;
+            // &:not(:last-child){
+            //     margin-right: 1rem;
+            // }
 
             span{
                 font-size: 1.2rem;
