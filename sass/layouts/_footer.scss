@@ -62,8 +62,6 @@
 
         &--links-flex{
             margin-top: 5rem;
-            margin-left: -3.2rem;
-            margin-bottom: 3.2rem;
             @include displayflex;
             flex-wrap: wrap;
             border: 1px solid red;
@@ -72,11 +70,14 @@
         &--links{
             display: inline-block;
             color: $footer-link;
-            border: 1px solid blue;
             line-height: $lh132;
             
             &:not(:last-child){
-               margin-left: 3.2rem;
+               margin-right: 2.2rem;
+            }
+
+            &:last-child{
+                flex-grow: 1;
             }
 
             span{
