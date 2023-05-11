@@ -62,12 +62,14 @@
 
         &--links-flex{
             display: flex;
+            flex-wrap: wrap;
             align-items: center;
             border: 1px solid red;
         }
 
         &--links{
             color: $footer-link;
+            border: 1px solid blue;
 
             span{
                 font-size: 1.2rem;
