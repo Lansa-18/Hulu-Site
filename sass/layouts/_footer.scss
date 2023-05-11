@@ -67,10 +67,11 @@
         }
 
         &--links{
+            display: inline-block;
             color: $footer-link;
+            margin-right: 4rem;
             border: 1px solid blue;
             &:not(:last-child){
-                margin-right: 4rem;
             }
 
             span{
