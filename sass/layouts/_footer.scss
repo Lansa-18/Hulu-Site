@@ -48,7 +48,7 @@
         letter-spacing: 0;
       }
     }
-    
+
     &--socials{
         margin-top: 7rem;
         border-top: 2px solid $border-grey-color2;
@@ -58,6 +58,15 @@
             display: flex;
             justify-content: space-between;
             width: 18%;
+        }
+
+        &--link-flex{
+            display: flex;
+            border: 1px solid red;
+        }
+
+        &--links{
+            color: $footer-link;
         }
     }
   }
