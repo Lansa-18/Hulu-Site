@@ -1,54 +1,53 @@
-.footer{
-    background-color: $footer-bg;
-    height: 82vh;
-    
-    &__container{
-        @include margin-auto2;
+.footer {
+  background-color: $footer-bg;
+  height: 82vh;
 
-        &--flex{
-            display: flex;
-            padding-top: 6rem;
-            
-            &--left{    
-                flex-basis: 65%;
-                margin-right: 4rem;
+  &__container {
+    @include margin-auto2;
 
+    &--flex {
+      display: flex;
+      padding-top: 6rem;
 
-                &--h3{
-                    font-size: 1.2rem;
-                    font-weight: 500;
-                    line-height: 1;
-                    letter-spacing: 0.6px;
-                    text-transform: uppercase;
-                }
+      &--left {
+        flex-basis: 65%;
+        margin-right: 4rem;
 
-                &--nav-flex{
-                    display: flex;
-                    justify-content: space-between;
-                    &--ul{
-                        list-style: none;
-                        &--child{
-                            margin-top: .8rem;
-                        }
-                    }
-                }
-            }
-
-            &--right{
-                flex-basis: 25%;
-                display: flex;
-                justify-content: space-between;
-
-            }
-
-            &--link{
-                color: $footer-link;
-                text-decoration: none;
-                font-size: $default-font-size;
-                font-weight: 400;
-                line-height: 1.4;
-                letter-spacing: 0;
-            }
+        &--h3 {
+          font-size: 1.2rem;
+          font-weight: 500;
+          line-height: 1;
+          letter-spacing: 0.6px;
+          text-transform: uppercase;
         }
+
+        &--nav-flex {
+          display: flex;
+          justify-content: space-between;
+          &--ul {
+            list-style: none;
+            &--child {
+              margin-top: 0.8rem;
+            }
+          }
+        }
+      }
+
+      &--right {
+        flex-basis: 25%;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      &--link {
+        color: $footer-link;
+        text-decoration: none;
+        font-size: $default-font-size;
+        font-weight: 400;
+        line-height: 1.4;
+        letter-spacing: 0;
+      }
     }
+    
+  }
 }
