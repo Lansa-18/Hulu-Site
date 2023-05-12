@@ -26,10 +26,19 @@
     text-align: center;
     margin-top: 2rem;
 
+    @include respond(phone){
+      border: 1px solid blue;
+      margin-top: 10rem;
+    }
+
     &--h2 {
       color: $color-white;
       font-size: 2.4rem;
       line-height: $lh124;
+
+      @include respond(phone){
+        margin-bottom: 3rem;
+      }
     }
 
     &--img {
@@ -63,8 +72,9 @@
 
     @include respond(phone){
       border: 1px solid red;
-      // margin-top: 30rem;
-      height: 30vh;
+      margin-top: 15rem;
+      height: 40vh;
+      position: relative;
     }
 
     &-parent {
@@ -76,7 +86,7 @@
 
       @include respond (phone){
         flex-direction: column;
-        
+        @include center-vertical-horizontal
       }
 
       &--img {
