@@ -178,6 +178,12 @@
 
     &--texts {
       width: 50%;
+
+      @include respond(tab-land){
+        text-align: center;
+        border: 1px solid red;
+        width: 100%;
+      }
     }
 
     &--p {
