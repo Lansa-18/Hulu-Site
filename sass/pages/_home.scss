@@ -1,5 +1,5 @@
 .section__shows {
-  padding: 5rem 0;
+  padding: 5rem 3rem;
   background-color: $bluish-black;
 }
 
@@ -23,9 +23,22 @@
     width: 98%;
     margin: 0 auto;
     position: relative;
+
+    @include respond(tab-land){
+      flex-wrap: wrap;
+      border: 1px solid red;
+      width: 100%;
+      gap: 1.2rem;
+    }
   }
 
   &-child {
+
+    @include respond(tab-land){
+      flex-basis: 48.5%;
+      border: 1px solid blue;
+    }
+
     &--img {
       width: 100%;
     }
