@@ -8,6 +8,10 @@ body {
   font-weight: 600;
   line-height: 1;
   text-transform: uppercase;
+
+  @include respond (phone){
+    font-size: 2rem;
+  }
 }
 
 .heading-sec {
