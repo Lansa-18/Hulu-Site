@@ -24,7 +24,5 @@ html {
 
 body {
   box-sizing: border-box;
-  @include respond(phone){
-    width: 100vw;
-  }
+  width: 100%;
 }

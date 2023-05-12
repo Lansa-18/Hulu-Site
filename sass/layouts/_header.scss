@@ -64,6 +64,11 @@
       justify-content: space-between;
       align-items: center;
 
+      @include respond (phone){
+        flex-direction: column;
+        
+      }
+
       &--img {
         width: 25%;
         @include respond(tab-land){
@@ -73,6 +78,8 @@
         @include respond(tab-port){
           margin-right: 20rem;
         }
+
+        @include res
       }
 
       &--text {
