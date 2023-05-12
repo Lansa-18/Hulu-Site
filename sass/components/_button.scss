@@ -56,7 +56,7 @@
     font-size: $default-font-size;
     margin-bottom: 1rem;
 
-    @include respond(phone){
+    @include respond(tab-land){
       background-color: $color-pry;
       color: $color-black;
       border: none;
@@ -69,7 +69,7 @@
       color: $color-black;
       transform: translateX(3px);
 
-      @include respond(phone){
+      @include respond(tab-land){
         opacity: .7;
         background-color: $color-pry;
         transform: translateX(0);
