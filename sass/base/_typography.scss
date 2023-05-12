@@ -2,18 +2,21 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-.heading-pry{
-    font-size: 1.2rem;
-    color: $color-pry;
-    font-weight: 600;
-    line-height: 1;
-    text-transform: uppercase;
+.heading-pry {
+  font-size: 1.2rem;
+  color: $color-pry;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+
+  @include respond (phone){
+    font-size: .7rem;
+  }
 }
 
-.heading-sec{
-    font-size: 4.8rem;
-    color: $color-white;
-    font-weight: 600;
-    line-height: 1.25;
+.heading-sec {
+  font-size: 4.8rem;
+  color: $color-white;
+  font-weight: 600;
+  line-height: 1.25;
 }
-
