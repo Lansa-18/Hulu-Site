@@ -61,6 +61,12 @@
     );
     padding: 1rem 0;
 
+    @include respond(phone){
+      border: 1px solid red;
+      // margin-top: 30rem;
+      height: 30vh;
+    }
+
     &-parent {
       padding: 2rem 0;
       @include margin-auto1;
