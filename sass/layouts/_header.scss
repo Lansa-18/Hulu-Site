@@ -79,7 +79,9 @@
           margin-right: 20rem;
         }
 
-        @include res
+        @include respond (phone){
+          margin-right: 0;
+        }
       }
 
       &--text {
