@@ -32,13 +32,29 @@
   }
 
   &-child {
-
+    position: relative;
     @include respond(tab-land){
       flex-basis: 48.5%;
     }
 
     &--img {
       width: 100%;
+      opacity: .7;
+    }
+
+    &--text{
+      position: absolute;
+      border: 1px solid blue;
+      color: $color-white;
+      top: 2.5rem;
+      left: 2.5rem;
+
+      h4{
+
+      }
+      p{
+        
+      }
     }
   }
 
