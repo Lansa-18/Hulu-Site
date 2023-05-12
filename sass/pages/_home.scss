@@ -22,13 +22,17 @@
     align-items: center;
     width: 98%;
     margin: 0 auto;
-    position: relative;
 
     @include respond(tab-land){
       flex-wrap: wrap;
       width: 100%;
       gap: 1.2rem;
     }
+
+    &:last-child{
+      border: 1px solid red;
+    }
+
   }
 
   &-child {
@@ -46,8 +50,9 @@
     color: $color-white;
     position: absolute;
     bottom: -2rem;
-    right: 0;
+    left: 0;
     opacity: 0.7;
+    border: 1px solid red;
 
     @include respond(tab-land){
       right: 15.5rem;
