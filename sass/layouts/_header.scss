@@ -98,8 +98,7 @@
         }
 
         @include respond(phone){
-          border: 1px solid red;
-          margin: 1rem 0 2rem 0;
+          margin: 2rem 0 2rem 0;
           text-align: center;
         }
       }
@@ -109,6 +108,10 @@
         font-size: 2.1rem;
         line-height: 1.24;
         font-weight: 400;
+
+        @include respond (phone){
+          margin-top: 0.5rem;
+        }
       }
 
       &-container {
