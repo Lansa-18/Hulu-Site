@@ -34,11 +34,11 @@
     border-radius: 3.5px;
 
     &:hover {
-      opacity: .55;
+      opacity: 0.55;
     }
   }
 
-  &--transparent{
+  &--transparent {
     width: 100%;
     display: block;
     color: $color-white;
@@ -50,25 +50,25 @@
     font-size: 1.4rem;
     margin-bottom: 1rem;
 
-    &:hover{
-        background-color: $color-white;
-        color: $color-black;
-        transform: translateX(3px);
+    &:hover {
+      background-color: $color-white;
+      color: $color-black;
+      transform: translateX(3px);
     }
   }
 
-  &--green{
+  &--green {
     background-color: $color-pry;
     color: $color-black;
     border-radius: 5rem;
     padding: 1rem 1.5rem;
 
-    &:hover{
-        opacity: .85;
+    &:hover {
+      opacity: 0.85;
     }
   }
 
-  &--white{
+  &--white {
     width: 100%;
     background-color: $color-white;
     color: $color-black;
@@ -80,12 +80,12 @@
     line-height: 1;
     letter-spacing: 0.6px;
 
-    &:hover{
-        opacity: .8;
+    &:hover {
+      opacity: 0.8;
     }
   }
 
-  &--white2{
+  &--white2 {
     width: 100%;
     background-color: $color-white;
     color: $color-black;
@@ -96,9 +96,8 @@
     line-height: 1;
     letter-spacing: 0.6px;
 
-    &:hover{
-        opacity: .8;
+    &:hover {
+      opacity: 0.8;
     }
   }
-
 }
