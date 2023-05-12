@@ -18,7 +18,9 @@ html {
     // width <= 900
     font-size: 50%; // 1rem = 8px; 8/16 = 50%
   }
-  
+  @include respond(big-dektop) {
+    font-size: 75%; // 1rem = 12px; 12/16 = 75%
+  }
 }
 
 body {
