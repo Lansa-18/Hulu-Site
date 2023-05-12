@@ -66,11 +66,17 @@
 
       &--img {
         width: 25%;
+        @include respond(tab-land){
+        }
       }
 
       &--text {
         margin-left: -20rem;
         flex-basis: 40%;
+
+        @include respond(tab-land){
+          flex-basis: 25%;
+        }
       }
 
       &--h2 {
