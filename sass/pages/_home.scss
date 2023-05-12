@@ -26,7 +26,6 @@
 
     @include respond(tab-land){
       flex-wrap: wrap;
-      border: 1px solid red;
       width: 100%;
       gap: 1.2rem;
     }
@@ -36,7 +35,6 @@
 
     @include respond(tab-land){
       flex-basis: 48.5%;
-      border: 1px solid blue;
     }
 
     &--img {
