@@ -67,6 +67,7 @@
       &--img {
         width: 25%;
         @include respond(tab-land){
+          margin-right: 8rem;
         }
       }
 
@@ -75,7 +76,7 @@
         flex-basis: 40%;
 
         @include respond(tab-land){
-          flex-basis: 25%;
+          flex-basis: 30%;
         }
       }
 
