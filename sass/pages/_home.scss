@@ -200,6 +200,11 @@
         margin: auto;
         font-weight: 600;
       }
+
+      @include respond(phone){
+        border: 1px solid red;
+        width: 95%;
+      }
     }
 
     &--p2 {
@@ -278,6 +283,10 @@
       justify-content: space-between;
       margin: auto;
       margin-bottom: 13rem;
+    }
+
+    @include respond-700px{
+      border: 1px solid red;
     }
 
     &--bottom-slider {
