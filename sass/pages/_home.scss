@@ -196,6 +196,10 @@
 
       @include respond(tab-land){
         border: 1px solid red;
+        font-size: 2.3rem;
+        width: 70%;
+        margin: auto;
+        font-weight: 600;
       }
     }
 
