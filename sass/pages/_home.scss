@@ -288,7 +288,7 @@
       width: 11rem;
 
       @include respond(tab-land){
-        width: 12rem;
+        width: 28%;
       }
     }
 
@@ -304,17 +304,16 @@
 
   .headlines__text {
     cursor: pointer;
-    &:not(:last-child) {
-      margin-right: 5rem;
-
-      @include respond(tab-land){
-        margin-right: 0;
-        border: 1px solid red;
-      }
-    }
+    flex-basis: 32%;
+    width: 100%;
+    // border: 1px solid red;
 
     @include respond(tab-land){
       text-align: center;
+    }
+
+    &--news{
+      margin-left: -3rem;
     }
 
     &:hover {
