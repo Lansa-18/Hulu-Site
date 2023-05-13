@@ -284,8 +284,8 @@
     }
 
     #news.active ~ .headlines__flex--bottom-slider {
-      transform: translateX(13.8rem);
-      width: 11rem;
+      transform: translateX(12.5rem);
+      width: 11.2rem;
 
       @include respond(tab-land){
         width: 28%;
@@ -293,7 +293,7 @@
     }
 
     #events.active ~ .headlines__flex--bottom-slider {
-      transform: translateX(30.5rem);
+      transform: translateX(27.5rem);
       width: 11rem;
     }
   }
