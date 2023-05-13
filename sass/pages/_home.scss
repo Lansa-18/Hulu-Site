@@ -213,9 +213,17 @@
 
       @include respond(tab-land){
         padding: 3rem 0;
-        width: 40%;
+        width: 50%;
         margin: auto;
         justify-content: space-between;
+      }
+
+      @include respond-700px{
+        width: 60%;
+      }
+
+      @include respond(phone){
+        width: 70%;
       }
     }
 
@@ -240,7 +248,10 @@
         width: 5.5rem;
       }
 
-      
+      @include respond-700px{
+        height: 5rem;
+        width: 5rem;
+      }
     }
 
     &--logo-img {
