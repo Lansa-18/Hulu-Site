@@ -283,10 +283,12 @@
       justify-content: space-between;
       margin: auto;
       margin-bottom: 13rem;
+      width: 70%;
     }
 
-    @include respond-700px{
+    @include respond(phone){
       border: 1px solid red;
+      width: 95%;
     }
 
     &--bottom-slider {
@@ -334,9 +336,6 @@
     width: 100%;
     // border: 1px solid red;
 
-    @include respond(tab-land){
-      // text-align: center;
-    }
 
     &--news{
       margin-left: -3rem;
