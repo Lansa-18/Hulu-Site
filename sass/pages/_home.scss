@@ -212,7 +212,10 @@
       display: flex;
 
       @include respond(tab-land){
-        border: 1px solid red;
+        padding: 3rem 0;
+        width: 40%;
+        margin: auto;
+        justify-content: space-between;
       }
     }
 
@@ -225,6 +228,11 @@
 
       &:not(:last-child) {
         margin-right: 3rem;
+      }
+
+      @include respond(tab-land){
+        height: 6rem;
+        width: 6rem;
       }
     }
 
