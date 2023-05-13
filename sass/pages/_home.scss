@@ -237,6 +237,11 @@
     text-transform: uppercase;
     position: relative;
 
+    @include respond(tab-land){
+      border: 1px solid blue;
+      width: 100%;
+    }
+
     &--bottom-slider {
       position: absolute;
       top: 2.5rem;
