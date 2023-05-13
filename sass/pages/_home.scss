@@ -286,6 +286,10 @@
     #news.active ~ .headlines__flex--bottom-slider {
       transform: translateX(13.8rem);
       width: 11rem;
+
+      @include respond(tab-land){
+        width: 12rem;
+      }
     }
 
     #events.active ~ .headlines__flex--bottom-slider {
