@@ -123,7 +123,11 @@ listSections.forEach((list) => {
         img4.src = "./img/oscars.png";
         break;
       case sport:
-        sectionSports.style.backgroundImage = "url(/img/green-bg.jpeg), url(/img/green-bg-port.jpeg)";
+        if (window.innerWidth <= 1200){
+          sectionSports.style.backgroundImage = "url(/img/green-bg-port.jpeg)";
+        } else {
+          sectionSports.style.backgroundImage = "url(/img/green-bg.jpeg)";
+        }
         switch_H2.textContent = "Live Sports";
         switchP.textContent =
           "Catch your games at home or on the go. Stream live games from major college and pro leagues including the NCAA®, NBA, NHL, NFL, and more.";
