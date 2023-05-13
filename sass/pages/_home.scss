@@ -240,9 +240,8 @@
     @include respond(tab-land){
       border: 1px solid blue;
       justify-content: space-between;
-      width: 60%;
       margin: auto;
-      margin-bottom: 3rem;
+      margin-bottom: 13rem;
     }
 
     &--bottom-slider {
@@ -287,6 +286,7 @@
 
       @include respond(tab-land){
         margin-right: 0;
+        border: 1px solid red;
       }
     }
 
