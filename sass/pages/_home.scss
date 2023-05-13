@@ -257,7 +257,6 @@
     position: relative;
 
     @include respond(tab-land){
-      border: 1px solid blue;
       justify-content: space-between;
       margin: auto;
       margin-bottom: 13rem;
@@ -309,11 +308,15 @@
     // border: 1px solid red;
 
     @include respond(tab-land){
-      text-align: center;
+      // text-align: center;
     }
 
     &--news{
       margin-left: -3rem;
+
+      @include respond(tab-land){
+        margin-left: -2rem;
+      }
     }
 
     &:hover {
