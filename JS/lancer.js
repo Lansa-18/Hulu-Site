@@ -103,7 +103,11 @@ listSections.forEach((list) => {
     // Using the switch statement to change the background image and texts to match the section of the list that is clicked.
     switch (e.target) {
       case news:
-        sectionSports.style.backgroundImage = "url(/img/blue-bg.jpeg),";
+        if (window.innerWidth <= 1200){
+          sectionSports.style.backgroundImage = "url(/img/blue-bg-port.jpeg)";
+        } else {
+          sectionSports.style.backgroundImage = "url(/img/blue-bg.jpeg)";
+        }
         switch_H2.textContent = "Breaking News";
         switchP.textContent =
           "Keep pace with what's going on locally and globally with trusted opinions from all the top news networks.";
@@ -113,7 +117,11 @@ listSections.forEach((list) => {
         img4.src = "./img/foxnews.svg";
         break;
       case events:
-        sectionSports.style.backgroundImage = "url(/img/pink-bg.jpeg)";
+        if (window.innerWidth <= 1200){
+          sectionSports.style.backgroundImage = "url(/img/pink-bg-port.jpeg)";
+        } else {
+          sectionSports.style.backgroundImage = "url(/img/pink-bg.jpeg)";
+        }
         switch_H2.textContent = "Biggest Events";
         switchP.textContent =
           "Spectacular, can't-miss moments like the Olympics, Grammys®, Oscars®, Emmys®, and more.";
