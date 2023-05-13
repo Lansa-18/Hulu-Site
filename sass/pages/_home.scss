@@ -202,7 +202,7 @@
       }
 
       @include respond(phone){
-        width: 100%;
+        width: 90%;
       }
     }
 
@@ -286,7 +286,7 @@
     }
 
     @include respond(phone){
-      width: 95%;
+      width: 100%;
     }
 
     &--bottom-slider {
