@@ -449,6 +449,11 @@
         flex-basis: 60%;
         display: flex;
 
+        @include respond-700px{
+          border: 1px solid red;
+          flex-basis: 65%;
+        }
+
         &--1 {
           flex-basis: 49%;
           padding: 2rem 0;
@@ -756,7 +761,6 @@
         margin: auto;
 
         @include respond(tab-land){
-          border: 1px solid red;
           width: 25%;
         }
 
