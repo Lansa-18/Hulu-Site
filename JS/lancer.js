@@ -100,9 +100,10 @@ listSections.forEach((list) => {
     list.classList.add("active");
     prevButton = list;
 
-    // calculate and update the width of the slider based on the width of the selected text content.
-    const selectedTextWidth = e.target.offsetWidth;
-    bottomSlider.style.width = `${selectedTextWidth}px`;
+    // calculate and update the width of the slider based on the width of the selected text content while excluding paddings.
+    const computedStyle = getComputedStyle(e.target);
+    const textWidth = e.target.offsetWidth - parseFloat(computedStyle.paddingLeft) - parseFloat(computedStyle.paddingRight);
+    bottomSlider.style.width = `${textWidth}px`;
 
      // Calculate the translateX value based on the position of the selected list item
     const selectedListItemIndex = Array.from(listSections).indexOf(e.target);
