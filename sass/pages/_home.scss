@@ -303,6 +303,11 @@
       height: 0.7rem;
       width: 8.5rem;
       transition: all 0.3s ease-in-out;
+
+      @include respond(tab-land){
+        border: 1px solid red;
+        left: 3rem;
+      }
     }
 
     .active {
@@ -314,7 +319,7 @@
       width: 8.5rem;
 
       @include respond(tab-land){
-        border: 1px solid red;
+       transform: translateX(4rem);
       }
     }
 
