@@ -100,6 +100,16 @@ listSections.forEach((list) => {
     list.classList.add("active");
     prevButton = list;
 
+    // calculate and update the width of the slider based on the width of the selected text content.
+    const selectedTextWidth = e.target.offsetWidth;
+    bottomSlider.style.width = `${selectedTextWidth}px`;
+
+     // Calculate the translateX value based on the position of the selected list item
+    const selectedListItemIndex = Array.from(listSections).indexOf(e.target);
+    const listItemWidth = listSections[0].offsetWidth;
+    const translateXValue = selectedListItemIndex * listItemWidth;
+    bottomSlider.style.transform = `translateX(${translateXValue}px)`;
+
     // Using the switch statement to change the background image and texts to match the section of the list that is clicked.
     switch (e.target) {
       case news:
