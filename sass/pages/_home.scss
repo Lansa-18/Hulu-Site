@@ -388,8 +388,6 @@
       background-color: $color-black;
       display: flex;
       align-items: center;
-      min-width: 37.5rem;
-
 
       @include respond(tab-land){
         flex-direction: column;
@@ -491,6 +489,11 @@
 
         @include respond(tab-land){
           width: 100%;
+        }
+
+        @include respond-500px{
+          min-width: 45.5rem;
+          border: 1px solid red;
         }
 
         &--1 {
