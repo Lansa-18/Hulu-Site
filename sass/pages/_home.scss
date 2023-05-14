@@ -301,7 +301,7 @@
       left: 0;
       background-color: $color-white;
       height: 0.7rem;
-      // width: 8.5rem;
+      width: 8.5rem;
       transition: all 0.3s ease-in-out;
 
       // @include respond(tab-land){
@@ -315,8 +315,8 @@
     }
 
     #sports.active ~ .headlines__flex--bottom-slider {
-      // transform: translateX(0);
-      // width: 8.5rem;
+      transform: translateX(0);
+      width: 8.5rem;
 
       // @include respond(tab-land){
       //  transform: translateX(4rem);
