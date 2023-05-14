@@ -363,6 +363,8 @@
   .plan__overall {
     @include margin-auto2;
 
+    
+
     &-top {
       &--text {
         text-align: center;
@@ -396,6 +398,7 @@
 
       @include respond-500px{
         min-width: 41.5rem;
+        padding: 0;
       }
       
       &--flex-left {
