@@ -389,27 +389,52 @@
       display: flex;
       align-items: center;
 
+      @include respond(tab-land){
+        flex-direction: column;
+      }
+      
       &--flex-left {
         margin-right: 2rem;
         flex-basis: 40%;
         color: $color-white;
         text-transform: uppercase;
         display: flex;
+        
+        @include respond(tab-land){
+          border-bottom: 1px solid $border-grey-color;
+          justify-content: center;
+          align-items: center;
+        }
 
         &--1 {
           flex-basis: 29%;
           width: 100%;
+
+          @include respond(tab-land){
+            // border: 1px solid red;
+            flex-basis: 20%;
+          }
+
           h3 {
             @include h3-plan;
           }
 
           img {
             width: 80%;
+
+            @include respond(tab-land){
+              width: 40%;
+            }
           }
         }
 
         &--2 {
-          flex-basis: 25%;
+          flex-basis: 15%;
+
+          @include respond(tab-land){
+            // border: 1px solid blue
+          }
+
           .toggle {
             background-color: $label-bg;
             @include displayflex;
@@ -435,11 +460,21 @@
 
         &--3 {
           flex-basis: 35%;
+
+          @include respond(tab-land){
+            // border: 1px solid green;
+            flex-basis: 25%;
+          }
+
           h3 {
             @include h3-plan;
           }
           img {
             width: 110%;
+
+            @include respond(tab-land){
+              width: 90%;
+            }
           }
         }
       }
@@ -448,11 +483,6 @@
         text-align: center;
         flex-basis: 60%;
         display: flex;
-
-        @include respond-700px{
-          border: 1px solid red;
-          flex-basis: 65%;
-        }
 
         &--1 {
           flex-basis: 49%;
