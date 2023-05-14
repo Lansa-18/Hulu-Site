@@ -100,21 +100,10 @@ listSections.forEach((list) => {
     list.classList.add("active");
     prevButton = list;
 
-    // calculate and update the width of the slider based on the width of the selected text content while excluding paddings.
-    const computedStyle = getComputedStyle(e.target);
-    const textWidth = e.target.offsetWidth - parseFloat(computedStyle.paddingLeft) - parseFloat(computedStyle.paddingRight);
-    bottomSlider.style.width = `${textWidth}px`;
-
-     // Calculate the translateX value based on the position of the selected list item
-    const selectedListItemIndex = Array.from(listSections).indexOf(e.target);
-    const listItemWidth = listSections[0].offsetWidth;
-    const translateXValue = selectedListItemIndex * listItemWidth;
-    bottomSlider.style.transform = `translateX(${translateXValue}px)`;
-
     // Using the switch statement to change the background image and texts to match the section of the list that is clicked.
     switch (e.target) {
       case news:
-        if (window.innerWidth <= 1200){
+        if (window.innerWidth <= 1200) {
           sectionSports.style.backgroundImage = "url(/img/blue-bg-port.jpeg)";
         } else {
           sectionSports.style.backgroundImage = "url(/img/blue-bg.jpeg)";
@@ -128,7 +117,7 @@ listSections.forEach((list) => {
         img4.src = "./img/foxnews.svg";
         break;
       case events:
-        if (window.innerWidth <= 1200){
+        if (window.innerWidth <= 1200) {
           sectionSports.style.backgroundImage = "url(/img/pink-bg-port.jpeg)";
         } else {
           sectionSports.style.backgroundImage = "url(/img/pink-bg.jpeg)";
@@ -142,7 +131,7 @@ listSections.forEach((list) => {
         img4.src = "./img/oscars.png";
         break;
       case sport:
-        if (window.innerWidth <= 1200){
+        if (window.innerWidth <= 1200) {
           sectionSports.style.backgroundImage = "url(/img/green-bg-port.jpeg)";
         } else {
           sectionSports.style.backgroundImage = "url(/img/green-bg.jpeg)";
@@ -167,17 +156,17 @@ listSections.forEach((list) => {
 
 toggleBg.addEventListener("click", toggler);
 
-window.addEventListener('scroll', ()=>{
-  const stickyDiv = document.querySelector('.plan__overall-middle');
+window.addEventListener("scroll", () => {
+  const stickyDiv = document.querySelector(".plan__overall-middle");
   const desiredScrollPosition = 3555.35;
 
   if (window.pageYOffset >= desiredScrollPosition) {
     console.log("Reached desired scroll position");
-    stickyDiv.style.position = 'static';
-    stickyDiv.style.top = '3555.5px';
+    stickyDiv.style.position = "static";
+    stickyDiv.style.top = "3555.5px";
   } else {
-    stickyDiv.style.position = 'sticky';
-    stickyDiv.style.top = '0';
+    stickyDiv.style.position = "sticky";
+    stickyDiv.style.top = "0";
   }
 });
 
@@ -191,4 +180,3 @@ window.addEventListener('scroll', ()=>{
 //     stickyDiv.style.top = '0';
 //   }
 // });
-
