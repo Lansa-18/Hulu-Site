@@ -393,6 +393,10 @@
         flex-direction: column;
         padding-bottom: 0;
       }
+
+      @include respond-500px{
+        min-width: 41.5rem;
+      }
       
       &--flex-left {
         margin-right: 2rem;
@@ -489,11 +493,6 @@
 
         @include respond(tab-land){
           width: 100%;
-        }
-
-        @include respond-500px{
-          min-width: 45.5rem;
-          border: 1px solid red;
         }
 
         &--1 {
