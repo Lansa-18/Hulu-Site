@@ -283,6 +283,7 @@
       margin: auto;
       margin-bottom: 13rem;
       width: 50%;
+      text-align: center;
     }
 
     @include respond(tab-port){
@@ -291,8 +292,10 @@
     }
 
     @include respond(phone){
-      width: 90%;
-      border: 1px solid red;
+      width: 100%;
+      // margin-left: 5rem;
+      // margin: auto;
+      // border: 1px solid red;
       // text-align: center;
     }
 
