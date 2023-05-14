@@ -287,16 +287,11 @@
     }
 
     @include respond(tab-port){
-      border: 1px solid blue;
       width: 70%;
     }
 
     @include respond(phone){
       width: 100%;
-      // margin-left: 5rem;
-      // margin: auto;
-      // border: 1px solid red;
-      // text-align: center;
     }
 
     &--bottom-slider {
@@ -317,6 +312,10 @@
     #sports.active ~ .headlines__flex--bottom-slider {
       transform: translateX(0);
       width: 8.5rem;
+
+      @include respond(tab-land){
+        border: 1px solid red;
+      }
     }
 
     #news.active ~ .headlines__flex--bottom-slider {
