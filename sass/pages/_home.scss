@@ -307,6 +307,7 @@
       @include respond(tab-land){
         border: 1px solid red;
         left: 3rem;
+        display: none;
       }
     }
 
@@ -317,19 +318,11 @@
     #sports.active ~ .headlines__flex--bottom-slider {
       transform: translateX(0);
       width: 8.5rem;
-
-      // @include respond(tab-land){
-      //  transform: translateX(4rem);
-      // }
     }
 
     #news.active ~ .headlines__flex--bottom-slider {
       transform: translateX(12.3rem);
       width: 11.2rem;
-
-      // @include respond(tab-land){
-      //   width: 28%;
-      // }
     }
 
     #events.active ~ .headlines__flex--bottom-slider {
