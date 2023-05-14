@@ -388,6 +388,8 @@
       background-color: $color-black;
       display: flex;
       align-items: center;
+      min-width: 37.5rem;
+
 
       @include respond(tab-land){
         flex-direction: column;
@@ -530,6 +532,10 @@
           line-height: $lh124;
           letter-spacing: 0;
           margin-bottom: 2.5rem;
+
+          @include respond(phone){
+            font-size: 1.2rem;
+          }
         }
       }
 
