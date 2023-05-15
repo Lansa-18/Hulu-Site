@@ -363,6 +363,10 @@
   .plan__overall {
     @include margin-auto2;
 
+    @include respond(tab-port){
+      width: 100%;
+    }
+
     @include respond-500px{
       width: 100%;
     }
