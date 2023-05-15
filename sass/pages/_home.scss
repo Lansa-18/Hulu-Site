@@ -603,7 +603,7 @@
         border-bottom: 1px solid $border-grey-color;
 
         @include respond(tab-port){
-          padding-left: 2rem;
+          padding-left: 5rem;
         }
 
         &--left {
