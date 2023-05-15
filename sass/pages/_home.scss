@@ -558,6 +558,10 @@
         display: none;
         text-align: center;
 
+        @include respond(phone){
+          border: 1px solid red;
+        }
+
         &--1 {
           padding: 2rem;
 
