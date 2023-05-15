@@ -561,6 +561,10 @@
         &--1 {
           padding: 2rem;
 
+          @include respond(phone){
+            padding: .5rem;
+          }
+
           img {
             width: 70%;
           }
