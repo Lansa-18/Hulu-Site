@@ -571,6 +571,7 @@
 
           &:not(:last-child) {
             margin-right: 1rem;
+            border-right: 1px solid $border-grey-color;
           }
         }
       }
