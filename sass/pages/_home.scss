@@ -643,6 +643,11 @@
         }
       }
 
+      &--text--container{
+        @include respond(tab-port){
+          padding-left: 5rem;
+        }
+      }
       &--text {
         &--span {
           color: $color-white;
