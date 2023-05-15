@@ -553,9 +553,10 @@
         flex-basis: 40%;
         display: none;
         text-align: center;
-        border: 1px solid red;
 
         &--1 {
+          padding: 2rem 0;
+
           img {
             width: 70%;
           }
@@ -571,7 +572,11 @@
 
           &:not(:last-child) {
             margin-right: 1rem;
-            border-right: 1px solid $border-grey-color;
+
+            @include respond(tab-land){
+              border-right: 1px solid $border-grey-color;
+              margin-right: 0;
+            }
           }
         }
       }
