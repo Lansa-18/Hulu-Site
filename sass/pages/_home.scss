@@ -424,7 +424,7 @@
           width: 100%;
 
           @include respond(tab-land){
-            border: 1px solid red;
+            // border: 1px solid red;
             flex-basis: 13%;
           }
 
@@ -445,7 +445,7 @@
           flex-basis: 30%;
 
           @include respond(tab-land){
-            border: 1px solid blue;
+            // border: 1px solid blue;
             flex-basis: 10%;
           }
 
@@ -476,7 +476,7 @@
           flex-basis: 33%;
 
           @include respond(tab-land){
-            border: 1px solid green;
+            // border: 1px solid green;
             flex-basis: 18%;
           }
 
