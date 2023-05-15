@@ -409,6 +409,7 @@
         color: $color-white;
         text-transform: uppercase;
         display: flex;
+        align-items: center;
         
         @include respond(tab-land){
           border-bottom: 1px solid $border-grey-color;
@@ -423,8 +424,8 @@
           width: 100%;
 
           @include respond(tab-land){
-            // border: 1px solid red;
-            flex-basis: 20%;
+            border: 1px solid red;
+            flex-basis: 13%;
           }
 
           h3 {
@@ -444,7 +445,8 @@
           flex-basis: 30%;
 
           @include respond(tab-land){
-            // border: 1px solid blue
+            border: 1px solid blue;
+            flex-basis: 10%;
           }
 
           .toggle {
@@ -474,8 +476,8 @@
           flex-basis: 33%;
 
           @include respond(tab-land){
-            // border: 1px solid green;
-            flex-basis: 25%;
+            border: 1px solid green;
+            flex-basis: 18%;
           }
 
           h3 {
