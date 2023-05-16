@@ -49,6 +49,10 @@
   @include respond(phone){
     font-size: $default-font-size;
   }
+
+  @include respond-400px{
+    font-size: 1.2rem;
+  }
 }
 
 @mixin default-typography{
