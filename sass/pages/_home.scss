@@ -616,14 +616,16 @@
           @include displayflex;
 
           @include respond(tab-land){
-            flex-basis: 55%;
             border: 1px solid green;
             margin-bottom: 1.5rem;
-            justify-content: space-between; 
           }
 
           h4 {
             @include bottom-h4-plan;
+
+            @include respond(tab-land){
+              margin-right: 3rem;
+            }
           }
 
           img {
