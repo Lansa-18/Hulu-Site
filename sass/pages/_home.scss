@@ -602,6 +602,11 @@
         padding: 2rem 0;
         border-bottom: 1px solid $border-grey-color;
 
+        @include respond(tab-land){
+          flex-direction: column;
+          border: 1px solid red;
+        }
+
         @include respond(tab-port){
           padding-left: 5rem;
         }
@@ -609,6 +614,10 @@
         &--left {
           flex-basis: 40%;
           @include displayflex;
+
+          @include respond(tab-land){
+            border: 1px solid green;
+          }
 
           h4 {
             @include bottom-h4-plan;
@@ -623,6 +632,10 @@
           @include displayflex;
           flex-basis: 60%;
           text-align: center;
+
+          @include respond(tab-land){
+            border: 1px solid blue;
+          }
 
           &--h4-1 {
             @include bottom-h4-plan;
