@@ -45,6 +45,10 @@
   @include respond(tab-land){
     font-size: 1.8rem;
   }
+
+  @include respond(phone){
+    font-size: $default-font-size;
+  }
 }
 
 @mixin default-typography{
