@@ -636,6 +636,7 @@
 
           @include respond(tab-land){
             border: 1px solid blue;
+            width: 100%;
           }
 
           &--h4-1 {
