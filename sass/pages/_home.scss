@@ -660,6 +660,10 @@
       }
 
       &--text-container{
+        @include respond(tab-land){
+          text-align: center;
+        }
+
         @include respond(tab-port){
           padding-left: 5rem;
         }
