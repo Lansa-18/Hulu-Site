@@ -401,11 +401,6 @@
         flex-direction: column;
         padding-bottom: 0;
       }
-
-      // @include respond-500px{
-      //   min-width: 41.5rem;
-      //   padding: 0;
-      // }
       
       &--flex-left {
         margin-right: 2rem;
@@ -569,6 +564,7 @@
 
         @include respond(phone){
           border: 1px solid red;
+          flex-direction: column;
         }
 
         &--1 {
@@ -581,6 +577,10 @@
 
           img {
             width: 70%;
+
+            @include respond(phone){
+              width: 50%;
+            }
           }
 
           span {
