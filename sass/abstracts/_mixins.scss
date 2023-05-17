@@ -29,10 +29,17 @@
 
 @mixin h3-plan{
   width: 100%;
-  // font-size: $default-font-size;
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.4;
+  letter-spacing: 0;
+}
+
+@mixin overall-middle-span{
+  color: $color-white;
+  font-size: $default-font-size;
+  font-weight: 600;
+  line-height: 1.32;
   letter-spacing: 0;
 }
 
