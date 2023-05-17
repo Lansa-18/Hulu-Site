@@ -93,9 +93,7 @@
   ORDER: base + typography > general layout + grid > page layout > components
 */
 
-@mixin respond-800px {
-  @media (max-width: 800px) { @content };
-}
+
 @mixin respond-700px {
   @media (max-width: 700px) { @content };
 }
