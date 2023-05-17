@@ -92,6 +92,10 @@
         justify-content: space-between;
         width: 18%;
 
+        @include respond-700px{
+          width: 35%;
+        }
+
         img {
           cursor: pointer;
         }
