@@ -92,7 +92,7 @@
         justify-content: space-between;
         width: 18%;
 
-        @include respond-700px{
+        @include respond-700px {
           width: 35%;
         }
 
@@ -106,7 +106,7 @@
         @include displayflex;
         flex-wrap: wrap;
 
-        @include respond-400px{
+        @include respond-400px {
           flex-direction: column;
           text-align: left;
         }

@@ -23,56 +23,53 @@
     width: 98%;
     margin: 0 auto;
 
-    @include respond(tab-land){
+    @include respond(tab-land) {
       flex-wrap: wrap;
       width: 100%;
       gap: 1.2rem;
     }
-
   }
 
   &-child {
     position: relative;
-    @include respond(tab-land){
+    @include respond(tab-land) {
       flex-basis: 48.5%;
     }
 
     &--img {
       width: 100%;
-      opacity: .7;
+      opacity: 0.7;
     }
 
-    &--text{
+    &--text {
       position: absolute;
       color: $color-white;
       top: 2.5rem;
       left: 2.5rem;
-      
 
-      h4{
+      h4 {
         font-size: 1.2rem;
         font-weight: 500;
         line-height: $lh144;
         letter-spacing: 0;
 
-        @include respond(tab-land){
+        @include respond(tab-land) {
           font-size: 1.8rem;
         }
-
       }
-      p{
+      p {
         margin-top: 1rem;
-        font-size: 2.0rem;
+        font-size: 2rem;
         line-height: 2.8rem;
 
-        @include respond(tab-land){
+        @include respond(tab-land) {
           font-size: 2.5rem;
         }
       }
     }
   }
 
-  &--last-child{
+  &--last-child {
     position: relative;
   }
 
@@ -80,11 +77,11 @@
     color: $color-white;
     position: absolute;
     bottom: -2rem;
-    font-size: .9rem;
+    font-size: 0.9rem;
     left: 0;
     opacity: 0.7;
 
-    @include respond(tab-land){
+    @include respond(tab-land) {
       font-size: $default-font-size;
     }
   }
@@ -151,17 +148,17 @@
   background-size: 121%;
   height: 100vh;
 
-  @include respond(tab-land){
+  @include respond(tab-land) {
     padding-top: 5rem;
   }
 
-  @include respond(tab-land){
+  @include respond(tab-land) {
     background-image: linear-gradient(
-      90deg,
-      rgba(0, 0, 0, 0.8) -57.5%,
-      rgba(0, 0, 0, 0) 98.72%
-    ),
-    url(/img/green-bg-port.jpeg);
+        90deg,
+        rgba(0, 0, 0, 0.8) -57.5%,
+        rgba(0, 0, 0, 0) 98.72%
+      ),
+      url(/img/green-bg-port.jpeg);
     background-size: 100%;
     background-position: 0 70%;
     background-repeat: no-repeat;
@@ -173,14 +170,14 @@
     margin-top: 10rem;
     transition: all 0.35s;
 
-    @include respond(tab-land){
+    @include respond(tab-land) {
       margin-top: 0;
     }
 
     &--texts {
       width: 50%;
 
-      @include respond(tab-land){
+      @include respond(tab-land) {
         text-align: center;
         width: 100%;
       }
@@ -194,14 +191,14 @@
       font-size: 1.8rem;
       line-height: $lh132;
 
-      @include respond(tab-land){
+      @include respond(tab-land) {
         font-size: 2rem;
         width: 70%;
         margin: auto;
         font-weight: 600;
       }
 
-      @include respond(phone){
+      @include respond(phone) {
         width: 90%;
       }
     }
@@ -215,18 +212,18 @@
     &--logo-flex {
       display: flex;
 
-      @include respond(tab-land){
+      @include respond(tab-land) {
         padding: 3rem 0;
         width: 50%;
         margin: auto;
         justify-content: space-between;
       }
 
-      @include respond-700px{
+      @include respond-700px {
         width: 60%;
       }
 
-      @include respond(phone){
+      @include respond(phone) {
         width: 70%;
       }
     }
@@ -242,17 +239,17 @@
         margin-right: 3rem;
       }
 
-      @include respond(tab-land){
+      @include respond(tab-land) {
         height: 6rem;
         width: 6rem;
       }
 
-      @include respond(tab-port){
+      @include respond(tab-port) {
         height: 5.5rem;
         width: 5.5rem;
       }
 
-      @include respond-700px{
+      @include respond-700px {
         height: 5rem;
         width: 5rem;
       }
@@ -278,7 +275,7 @@
     text-transform: uppercase;
     position: relative;
 
-    @include respond(tab-land){
+    @include respond(tab-land) {
       justify-content: space-between;
       margin: auto;
       margin-bottom: 13rem;
@@ -286,11 +283,11 @@
       text-align: center;
     }
 
-    @include respond(tab-port){
+    @include respond(tab-port) {
       width: 70%;
     }
 
-    @include respond(phone){
+    @include respond(phone) {
       width: 100%;
     }
 
@@ -304,7 +301,7 @@
       width: 8.5rem;
       transition: all 0.3s ease-in-out;
 
-      @include respond(tab-land){
+      @include respond(tab-land) {
         border: 1px solid red;
         left: 3rem;
         display: none;
@@ -340,11 +337,10 @@
     flex-basis: 32%;
     width: 100%;
 
-
-    &--news{
+    &--news {
       margin-left: -3rem;
 
-      @include respond(tab-land){
+      @include respond(tab-land) {
         margin-left: -2rem;
       }
     }
@@ -362,11 +358,11 @@
   .plan__overall {
     @include margin-auto2;
 
-    @include respond(tab-port){
+    @include respond(tab-port) {
       width: 100%;
     }
 
-    @include respond-500px{
+    @include respond-500px {
       width: 100%;
     }
 
@@ -396,11 +392,11 @@
       display: flex;
       align-items: center;
 
-      @include respond(tab-land){
+      @include respond(tab-land) {
         flex-direction: column;
         padding-bottom: 0;
       }
-      
+
       &--flex-left {
         margin-right: 2rem;
         flex-basis: 40%;
@@ -408,8 +404,8 @@
         text-transform: uppercase;
         display: flex;
         align-items: center;
-        
-        @include respond(tab-land){
+
+        @include respond(tab-land) {
           border-bottom: 1px solid $border-grey-color;
           justify-content: center;
           align-items: center;
@@ -421,15 +417,15 @@
           flex-basis: 27%;
           width: 100%;
 
-          @include respond(tab-land){
+          @include respond(tab-land) {
             flex-basis: 15%;
           }
 
-          @include respond(phone){
+          @include respond(phone) {
             flex-basis: 17%;
           }
 
-          @include respond-400px{
+          @include respond-400px {
             flex-basis: 19%;
           }
 
@@ -440,7 +436,7 @@
           img {
             width: 80%;
 
-            @include respond(tab-land){
+            @include respond(tab-land) {
               width: 40%;
             }
           }
@@ -449,15 +445,15 @@
         &--2 {
           flex-basis: 30%;
 
-          @include respond(tab-land){
+          @include respond(tab-land) {
             flex-basis: 13%;
           }
 
-          @include respond(phone){
+          @include respond(phone) {
             flex-basis: 17%;
           }
 
-          @include respond-400px{
+          @include respond-400px {
             flex-basis: 19%;
           }
 
@@ -487,15 +483,15 @@
         &--3 {
           flex-basis: 33%;
 
-          @include respond(tab-land){
+          @include respond(tab-land) {
             flex-basis: 20%;
           }
 
-          @include respond(phone){
+          @include respond(phone) {
             flex-basis: 17%;
           }
 
-          @include respond-400px{
+          @include respond-400px {
             flex-basis: 19%;
           }
 
@@ -505,7 +501,7 @@
           img {
             width: 110%;
 
-            @include respond(tab-land){
+            @include respond(tab-land) {
               width: 90%;
             }
           }
@@ -517,7 +513,7 @@
         flex-basis: 60%;
         display: flex;
 
-        @include respond(tab-land){
+        @include respond(tab-land) {
           width: 100%;
         }
 
@@ -526,7 +522,7 @@
           padding: 2rem 0;
           margin-right: 1.6rem;
 
-          @include respond(tab-land){
+          @include respond(tab-land) {
             border-right: 1px solid $border-grey-color;
             margin: 0;
             padding: 2rem 4rem;
@@ -537,7 +533,7 @@
           flex-basis: 49%;
           padding: 5.5rem 0 2rem 0;
 
-          @include respond(tab-land){
+          @include respond(tab-land) {
             padding: 5.5rem 4rem 0 4rem;
           }
         }
@@ -561,7 +557,7 @@
           letter-spacing: 0;
           margin-bottom: 2.5rem;
 
-          @include respond(phone){
+          @include respond(phone) {
             font-size: 1.2rem;
           }
         }
@@ -573,46 +569,46 @@
         display: none;
         text-align: center;
 
-        @include respond(phone){
+        @include respond(phone) {
         }
 
         &--1 {
           flex-basis: 36%;
-          
-          @include respond(tab-land){
+
+          @include respond(tab-land) {
             padding: 1rem;
           }
 
-          @include respond(phone){
-            padding: .5rem;
+          @include respond(phone) {
+            padding: 0.5rem;
           }
 
           img {
             width: 70%;
           }
 
-          #span-desktop{
+          #span-desktop {
             display: block;
             @include overall-middle-span;
 
-            @include respond(tab-land){
+            @include respond(tab-land) {
               display: none;
             }
           }
 
-          #span-mobile{
+          #span-mobile {
             display: none;
             @include overall-middle-span;
 
-            @include respond(tab-land){
+            @include respond(tab-land) {
               display: block;
             }
           }
 
           &:not(:last-child) {
-            margin-right: .8rem;
+            margin-right: 0.8rem;
 
-            @include respond(tab-land){
+            @include respond(tab-land) {
               border-right: 1px solid $border-grey-color;
               margin-right: 0;
             }
@@ -629,11 +625,11 @@
         padding: 2rem 0;
         border-bottom: 1px solid $border-grey-color;
 
-        @include respond(tab-land){
+        @include respond(tab-land) {
           flex-direction: column;
         }
 
-        @include respond(tab-port){
+        @include respond(tab-port) {
           padding-left: 5rem;
         }
 
@@ -641,14 +637,14 @@
           flex-basis: 40%;
           @include displayflex;
 
-          @include respond(tab-land){
+          @include respond(tab-land) {
             margin-bottom: 1.5rem;
           }
 
           h4 {
             @include bottom-h4-plan;
 
-            @include respond(tab-land){
+            @include respond(tab-land) {
               margin-right: 3rem;
             }
           }
@@ -663,7 +659,7 @@
           flex-basis: 60%;
           text-align: center;
 
-          @include respond(tab-land){
+          @include respond(tab-land) {
             width: 100%;
           }
 
@@ -686,8 +682,8 @@
         }
       }
 
-      &--text-container{
-        @include respond(tab-land){
+      &--text-container {
+        @include respond(tab-land) {
           text-align: center;
         }
       }
@@ -710,7 +706,7 @@
         padding: 2rem 0;
         border-bottom: 1px solid $border-grey-color;
 
-        @include respond(tab-land){
+        @include respond(tab-land) {
           flex-direction: column;
         }
 
@@ -718,14 +714,14 @@
           flex-basis: 30%;
           @include displayflex;
 
-          @include respond(tab-land){
+          @include respond(tab-land) {
             margin-bottom: 2rem;
           }
 
           h4 {
             @include bottom-h4-plan;
 
-            @include respond-700px{
+            @include respond-700px {
               font-size: 1.2rem;
             }
           }
@@ -740,7 +736,7 @@
           flex-basis: 70%;
           text-align: center;
 
-          @include respond(tab-land){
+          @include respond(tab-land) {
             width: 100%;
           }
 
@@ -748,16 +744,15 @@
             @include bottom-h4-plan;
             flex-basis: 33%;
 
-            @include respond(tab-land){
-              &:not(:last-child){
+            @include respond(tab-land) {
+              &:not(:last-child) {
                 border-right: 1px solid $border-grey-color;
               }
             }
 
-            @include respond-700px{
+            @include respond-700px {
               font-size: 1.2rem;
             }
-
 
             #strikethrough-span {
               text-decoration: line-through;
@@ -786,18 +781,17 @@
       margin-top: 10rem;
       color: $color-white;
 
-      @include respond(tab-land){
-
+      @include respond(tab-land) {
       }
 
       &--texts {
         padding: 2.5rem 0;
         border-bottom: 1px solid $border-grey-color;
 
-        @include respond(tab-land){
+        @include respond(tab-land) {
           text-align: center;
         }
-        
+
         h3 {
           font-size: 3.2rem;
           font-weight: 600;
@@ -818,7 +812,7 @@
         padding: 2rem 0;
         border-bottom: 1px solid $border-grey-color;
 
-        @include respond(tab-land){
+        @include respond(tab-land) {
           flex-direction: column;
         }
 
@@ -840,7 +834,7 @@
           flex-basis: 60%;
           text-align: center;
 
-          @include respond(tab-land){
+          @include respond(tab-land) {
             width: 100%;
             margin-top: 2rem;
           }
@@ -874,10 +868,9 @@
         padding: 2.5rem 0;
         border-bottom: 1px solid $border-grey-color;
 
-        @include respond(tab-land){
+        @include respond(tab-land) {
           text-align: center;
         }
-        
 
         h3 {
           font-size: 3.2rem;
@@ -899,7 +892,7 @@
         padding: 2rem 0;
         border-bottom: 1px solid $border-grey-color;
 
-        @include respond(tab-land){
+        @include respond(tab-land) {
           flex-direction: column;
         }
 
@@ -921,7 +914,7 @@
           flex-basis: 75%;
           text-align: center;
 
-          @include respond(tab-land){
+          @include respond(tab-land) {
             width: 100%;
             margin-top: 2rem;
           }
@@ -954,23 +947,23 @@
         width: 17%;
         margin: auto;
 
-        @include respond(tab-land){
+        @include respond(tab-land) {
           width: 25%;
         }
 
-        @include respond-700px{
+        @include respond-700px {
           width: 30%;
         }
 
-        @include respond(phone){
+        @include respond(phone) {
           width: 35%;
         }
 
-        @include respond-500px{
+        @include respond-500px {
           width: 45%;
         }
 
-        @include respond-400px{
+        @include respond-400px {
           width: 55%;
         }
 
@@ -987,7 +980,7 @@
   }
 }
 
-.original-position{
+.original-position {
   position: static;
   top: 0;
   border: 1px solid red;
