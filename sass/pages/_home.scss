@@ -588,6 +588,10 @@
             letter-spacing: 0;
           }
 
+          #span-mobile{
+            border: 1px solid red;
+          }
+
           &:not(:last-child) {
             margin-right: .8rem;
 
