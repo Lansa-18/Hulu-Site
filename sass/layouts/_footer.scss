@@ -9,7 +9,7 @@
       display: flex;
       padding-top: 6rem;
 
-      @include respond-700px{
+      @include respond-700px {
         flex-direction: column;
       }
 
@@ -17,7 +17,7 @@
         flex-basis: 65%;
         margin-right: 4rem;
 
-        @include respond-700px{
+        @include respond-700px {
           margin-right: 0;
         }
 
@@ -33,14 +33,14 @@
           display: flex;
           justify-content: space-between;
 
-          @include respond(phone){
+          @include respond(phone) {
             flex-direction: column;
           }
 
           &--ul {
             list-style: none;
 
-            @include respond(phone){
+            @include respond(phone) {
               margin-top: 2.5rem;
             }
 
@@ -56,17 +56,16 @@
         display: flex;
         justify-content: space-between;
 
-        @include respond-700px{
+        @include respond-700px {
           width: 50%;
           margin-top: 3rem;
         }
 
-        @include respond(phone){
+        @include respond(phone) {
           flex-direction: column;
 
-          & > div{
-            border: 1px solid blue;
-            &:not(:last-child){
+          & > div {
+            &:not(:last-child) {
               margin-bottom: 2.5rem;
             }
           }
@@ -83,57 +82,57 @@
       }
     }
 
-    &--socials{
-        margin-top: 9rem;
-        border-top: 2px solid $border-grey-color2;
-        padding: 4rem 0;
+    &--socials {
+      margin-top: 9rem;
+      border-top: 2px solid $border-grey-color2;
+      padding: 4rem 0;
 
-        .social__img--flex{
-            display: flex;
-            justify-content: space-between;
-            width: 18%;
+      .social__img--flex {
+        display: flex;
+        justify-content: space-between;
+        width: 18%;
 
-            img{
-                cursor: pointer;
-            }
+        img {
+          cursor: pointer;
+        }
+      }
+
+      &--links-flex {
+        margin-top: 5rem;
+        @include displayflex;
+        flex-wrap: wrap;
+      }
+
+      &--links {
+        display: inline-block;
+        color: $footer-link;
+        line-height: $lh132;
+        margin-bottom: 1rem;
+
+        &:not(:last-child) {
+          margin-right: 2.2rem;
         }
 
-        &--links-flex{
-            margin-top: 5rem;
-            @include displayflex;
-            flex-wrap: wrap;
+        &:last-child {
+          flex-grow: 1;
         }
 
-        &--links{
-            display: inline-block;
-            color: $footer-link;
-            line-height: $lh132;
-            margin-bottom: 1rem;
-            
-            &:not(:last-child){
-               margin-right: 2.2rem;
-            }
-
-            &:last-child{
-                flex-grow: 1;
-            }
-
-            span{
-                font-size: 1.2rem;
-                font-weight: 400;
-                line-height: 1.44;
-                letter-spacing: 0
-            }
-
-            &--a-tags{
-                text-decoration: none;
-                color: inherit;
-
-                img{
-                    width: 15%;
-                }
-            }
+        span {
+          font-size: 1.2rem;
+          font-weight: 400;
+          line-height: 1.44;
+          letter-spacing: 0;
         }
+
+        &--a-tags {
+          text-decoration: none;
+          color: inherit;
+
+          img {
+            width: 15%;
+          }
+        }
+      }
     }
   }
 }
