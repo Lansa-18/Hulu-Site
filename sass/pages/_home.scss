@@ -726,12 +726,6 @@
           @include respond(tab-land){
             // border: 1px solid blue;
             width: 100%;
-
-            &:not(:last-child){
-              border-right: 1px solid $border-grey-color;
-              border: 1px solid blue;
-
-            }
           }
 
           &--h4-1 {
