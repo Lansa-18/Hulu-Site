@@ -588,6 +588,11 @@
 
           #span-desktop{
             display: block;
+            color: $color-white;
+            font-size: $default-font-size;
+            font-weight: 600;
+            line-height: 1.32;
+            letter-spacing: 0;
 
             @include respond(tab-land){
               display: none;
@@ -596,9 +601,14 @@
 
           #span-mobile{
             display: none;
+            color: $color-white;
+            font-size: $default-font-size;
+            font-weight: 600;
+            line-height: 1.32;
+            letter-spacing: 0;
 
             @include respond(tab-land){
-              display: flex;
+              display: block;
             }
           }
 
