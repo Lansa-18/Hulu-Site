@@ -793,7 +793,7 @@
       &--texts {
         padding: 2.5rem 0;
         border-bottom: 1px solid $border-grey-color;
-        
+
         @include respond(tab-land){
           text-align: center;
         }
@@ -818,6 +818,10 @@
         padding: 2rem 0;
         border-bottom: 1px solid $border-grey-color;
 
+        @include respond(tab-land){
+          flex-direction: column;
+        }
+
         &--left {
           flex-basis: 40%;
           @include displayflex;
@@ -835,6 +839,11 @@
           @include displayflex;
           flex-basis: 60%;
           text-align: center;
+
+          @include respond(tab-land){
+            width: 100%;
+            margin-top: 2rem;
+          }
 
           &--h4-1 {
             @include bottom-h4-plan;
