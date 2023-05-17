@@ -710,6 +710,10 @@
 
           h4 {
             @include bottom-h4-plan;
+
+            @include respond-700px{
+              font-size: 1.2rem;
+            }
           }
 
           img {
@@ -732,7 +736,6 @@
 
             @include respond(tab-land){
               &:not(:last-child){
-                border: 1px solid red;
                 border-right: 1px solid $border-grey-color;
               }
             }
