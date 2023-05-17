@@ -105,6 +105,11 @@
         margin-top: 5rem;
         @include displayflex;
         flex-wrap: wrap;
+
+        @include respond-400px{
+          flex-direction: column;
+          text-align: left;
+        }
       }
 
       &--links {
