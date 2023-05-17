@@ -564,7 +564,6 @@
 
         @include respond(phone){
           border: 1px solid red;
-          flex-direction: column;
         }
 
         &--1 {
@@ -577,10 +576,6 @@
 
           img {
             width: 70%;
-
-            @include respond(phone){
-              width: 50%;
-            }
           }
 
           span {
