@@ -575,7 +575,6 @@
         text-align: center;
 
         @include respond(phone){
-          border: 1px solid red;
         }
 
         &--1 {
@@ -714,7 +713,6 @@
 
         @include respond(tab-land){
           flex-direction: column;
-          border: 1px solid red;
         }
 
         &--left {

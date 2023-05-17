@@ -1,6 +1,7 @@
 .footer {
   background-color: $footer-bg;
   height: 82vh;
+  border: 1px solid red;
 
   &__container {
     @include margin-auto2;
@@ -12,6 +13,10 @@
       &--left {
         flex-basis: 65%;
         margin-right: 4rem;
+
+        @include respond(tab-port){
+          border: 1px solid red;
+        }
 
         &--h3 {
           font-size: 1.2rem;
@@ -37,6 +42,10 @@
         flex-basis: 25%;
         display: flex;
         justify-content: space-between;
+
+        @include respond(tab-port){
+          border: 1px solid blue;
+        }
       }
 
       &--link {
