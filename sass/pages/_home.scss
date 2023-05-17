@@ -704,6 +704,10 @@
           flex-basis: 30%;
           @include displayflex;
 
+          @include respond(tab-land){
+            border: 1px solid red;
+          }
+
           h4 {
             @include bottom-h4-plan;
           }
@@ -717,6 +721,10 @@
           @include displayflex;
           flex-basis: 70%;
           text-align: center;
+
+          @include respond(tab-land){
+            border: 1px solid blue;
+          }
 
           &--h4-1 {
             @include bottom-h4-plan;
