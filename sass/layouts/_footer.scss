@@ -9,12 +9,17 @@
       display: flex;
       padding-top: 6rem;
 
+      @include respond-700px{
+        flex-direction: column;
+      }
+
       &--left {
         flex-basis: 65%;
         margin-right: 4rem;
 
-        @include respond(tab-port){
+        @include respond-700px{
           border: 1px solid red;
+          margin-right: 0;
         }
 
         &--h3 {
@@ -42,8 +47,10 @@
         display: flex;
         justify-content: space-between;
 
-        @include respond(tab-port){
+        @include respond-700px{
           border: 1px solid blue;
+          width: 50%;
+          margin-top: 3rem;
         }
       }
 
