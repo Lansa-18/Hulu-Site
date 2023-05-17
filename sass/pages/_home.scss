@@ -586,8 +586,20 @@
             letter-spacing: 0;
           }
 
+          #span-desktop{
+            display: block;
+
+            @include respond(tab-land){
+              display: none;
+            }
+          }
+
           #span-mobile{
             display: none;
+
+            @include respond(tab-land){
+              display: flex;
+            }
           }
 
           &:not(:last-child) {
