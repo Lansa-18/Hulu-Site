@@ -558,7 +558,7 @@
 
       // STYLINGS FOR THE ACTIVE PART OF THE FLEX
       &--flex-right2 {
-        flex-basis: 40%;
+        flex-basis: 60%;
         display: none;
         text-align: center;
 
@@ -567,7 +567,7 @@
         }
 
         &--1 {
-          padding: 2rem;
+          // padding: 2rem;
           border: 1px solid blue;
 
           @include respond(phone){
