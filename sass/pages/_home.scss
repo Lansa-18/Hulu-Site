@@ -736,6 +736,10 @@
               }
             }
 
+            @include respond-700px{
+              font-size: 1.3rem;
+            }
+
 
             #strikethrough-span {
               text-decoration: line-through;
