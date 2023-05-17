@@ -431,7 +431,7 @@
           }
 
           @include respond-400px{
-            flex-basis: 19%
+            flex-basis: 19%;
           }
 
           h3 {
@@ -456,6 +456,10 @@
 
           @include respond(phone){
             flex-basis: 17%;
+          }
+
+          @include respond-400px{
+            flex-basis: 19%;
           }
 
           .toggle {
@@ -490,6 +494,10 @@
 
           @include respond(phone){
             flex-basis: 17%;
+          }
+
+          @include respond-400px{
+            flex-basis: 19%;
           }
 
           h3 {
