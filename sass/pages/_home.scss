@@ -786,9 +786,18 @@
       margin-top: 10rem;
       color: $color-white;
 
+      @include respond(tab-land){
+
+      }
+
       &--texts {
         padding: 2.5rem 0;
         border-bottom: 1px solid $border-grey-color;
+        
+        @include respond(tab-land){
+          text-align: center;
+        }
+        
         h3 {
           font-size: 3.2rem;
           font-weight: 600;
