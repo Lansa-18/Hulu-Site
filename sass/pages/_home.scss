@@ -724,13 +724,18 @@
           text-align: center;
 
           @include respond(tab-land){
-            // border: 1px solid blue;
             width: 100%;
           }
 
           &--h4-1 {
             @include bottom-h4-plan;
             flex-basis: 33%;
+
+            @include respond(tab-land){
+              &:not(:last-child){
+                border-right: 1px solid $border-grey-color;
+              }
+            }
 
 
             #strikethrough-span {
