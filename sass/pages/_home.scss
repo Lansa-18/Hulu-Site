@@ -714,6 +714,7 @@
 
         @include respond(tab-land){
           flex-direction: column;
+          border: 1px solid red;
         }
 
         @include respond(tab-port){
