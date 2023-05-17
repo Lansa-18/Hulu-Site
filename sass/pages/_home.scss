@@ -418,10 +418,6 @@
           padding: 1.5rem 0;
         }
 
-        @include respond-400{
-          border: 1px solid red;
-        }
-
         &--1 {
           flex-basis: 27%;
           width: 100%;
@@ -432,6 +428,10 @@
 
           @include respond(phone){
             flex-basis: 17%;
+          }
+
+          @include respond-400px{
+            flex-basis: 19%
           }
 
           h3 {
