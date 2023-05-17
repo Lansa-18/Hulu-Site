@@ -875,8 +875,9 @@
         border-bottom: 1px solid $border-grey-color;
 
         @include respond(tab-land){
-          flex-direction: column;
+          text-align: center;
         }
+        
 
         h3 {
           font-size: 3.2rem;
@@ -898,6 +899,10 @@
         padding: 2rem 0;
         border-bottom: 1px solid $border-grey-color;
 
+        @include respond(tab-land){
+          flex-direction: column;
+        }
+
         &--left {
           flex-basis: 35%;
           @include displayflex;
@@ -915,6 +920,11 @@
           @include displayflex;
           flex-basis: 75%;
           text-align: center;
+
+          @include respond(tab-land){
+            width: 100%;
+            margin-top: 2rem;
+          }
 
           &--h4-1 {
             @include bottom-h4-plan;
