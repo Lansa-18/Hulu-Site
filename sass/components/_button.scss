@@ -104,9 +104,7 @@
       letter-spacing: 0;
     }
 
-    @include respond-648px{
-      
-    }
+    
 
     &:hover {
       opacity: 0.8;
@@ -117,12 +115,18 @@
     width: 100%;
     background-color: $color-white;
     color: $color-black;
-    padding: 1.8rem 6rem;
+    padding: 1.8rem;
     border-radius: 4px;
     font-size: 1.1rem;
     font-weight: 700;
     line-height: 1;
     letter-spacing: 0.6px;
+
+   
+    @include respond(tab-land){
+      font-size: 1.1rem;
+      letter-spacing: 0;
+    }
 
     &:hover {
       opacity: 0.8;
