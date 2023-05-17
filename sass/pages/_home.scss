@@ -577,17 +577,9 @@
             width: 70%;
           }
 
-          span {
-            display: block;
-            color: $color-white;
-            font-size: $default-font-size;
-            font-weight: 600;
-            line-height: 1.32;
-            letter-spacing: 0;
-          }
-
           #span-desktop{
             display: block;
+            @include overall-middle-span;
 
             @include respond(tab-land){
               display: none;
@@ -596,6 +588,7 @@
 
           #span-mobile{
             display: none;
+            @include overall-middle-span;
 
             @include respond(tab-land){
               display: block;
