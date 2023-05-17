@@ -129,6 +129,11 @@
       letter-spacing: 0;
     }
 
+    @include respond(phone){
+      font-size: 1rem;
+      letter-spacing: 0;
+    }
+
     &:hover {
       opacity: 0.8;
     }
