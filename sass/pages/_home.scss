@@ -629,10 +629,6 @@
           flex-direction: column;
         }
 
-        @include respond(tab-port) {
-          padding-left: 5rem;
-        }
-
         &--left {
           flex-basis: 40%;
           @include displayflex;
