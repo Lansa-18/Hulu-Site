@@ -568,6 +568,10 @@
 
         &--1 {
           flex-basis: 36%;
+          
+          @include respond(tab-land){
+            padding: 1rem;
+          }
 
           @include respond(phone){
             padding: .5rem;
