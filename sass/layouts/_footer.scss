@@ -1,10 +1,10 @@
 .footer {
   background-color: $footer-bg;
-  height: 82vh;
   border: 1px solid red;
 
   &__container {
-    @include margin-auto2;
+    width: 90%;
+    margin: auto;
 
     &--flex {
       display: flex;
