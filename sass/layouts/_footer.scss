@@ -60,6 +60,17 @@
           width: 50%;
           margin-top: 3rem;
         }
+
+        @include respond(phone){
+          flex-direction: column;
+
+          & > div{
+            border: 1px solid blue;
+            &:not(:last-child){
+              margin-bottom: 2.5rem;
+            }
+          }
+        }
       }
 
       &--link {
